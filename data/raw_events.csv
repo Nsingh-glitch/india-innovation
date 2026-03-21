@@ -1,0 +1,16 @@
+id,source_type,source_name,collected_at,raw_text,author,source_url
+evt_001,demo_social,twitter_demo,2026-03-21T10:00:00,"Ward 12 me 3 din se paani nahi aa raha, log bahut pareshan hain",user_1,
+evt_002,demo_news,local_news_demo,2026-03-21T10:05:00,"Residents of Ward 12 reported severe water shortage for the third consecutive day.",reporter_1,
+evt_003,demo_meeting,meeting_demo,2026-03-21T10:10:00,"Village members raised complaints about electricity outages in Booth 4.",secretary,
+evt_004,demo_field,field_worker_demo,2026-03-21T10:20:00,"Booth 9 road near school is broken and causing accidents.",worker_3,
+evt_005,demo_social,instagram_demo,2026-03-21T10:25:00,"Sadak bahut kharab hai Ward 9 ke school ke paas",user_7,
+evt_006,demo_field,field_worker_demo,2026-03-21T10:30:00,"Pension payment delay issue in Village Rampur",worker_2,
+evt_007,demo_social,facebook_demo,2026-03-21T10:35:00,"Bijli 2 din se nahi hai Booth 4 me",user_9,
+evt_008,demo_news,local_news_demo,2026-03-21T10:40:00,"Citizens in Village Rampur complained that pension distribution is delayed.",reporter_2,
+evt_009,demo_meeting,meeting_demo,2026-03-21T10:45:00,"Ward 7 has a sanitation issue due to garbage not being collected.",secretary,
+evt_010,demo_field,field_worker_demo,2026-03-21T10:50:00,"Health center in Ward 5 lacks medicine stock",worker_1
+evt_011,demo_social,twitter_demo,2026-03-21T11:00:00,"Ward 7 ki galiyon me kachra pada hai, koi uthane nahi aata",user_12,
+evt_012,demo_news,local_news_demo,2026-03-21T11:15:00,"Primary health center in Ward 5 faces shortage of essential medicines.",reporter_3,
+evt_013,demo_meeting,meeting_demo,2026-03-21T11:30:00,"Discussion on street light repairs in Booth 15; many lights are non-functional.",secretary,
+evt_014,demo_field,field_worker_demo,2026-03-21T11:45:00,"Water logging reported near the main market area in Ward 3 after last night's rain.",worker_4,
+evt_015,demo_social,facebook_demo,2026-03-21T12:00:00,"Booth 15 ki road pe bilkul andhera hai, street lights kaam nahi kar rahi",user_22,

@@ -1,0 +1,10 @@
+geo_unit_id,geo_unit_type,geo_unit_name,parent_constituency
+ward_12,ward,Ward 12,Constituency A
+ward_9,ward,Ward 9,Constituency A
+ward_7,ward,Ward 7,Constituency A
+ward_5,ward,Ward 5,Constituency A
+ward_3,ward,Ward 3,Constituency A
+booth_4,booth,Booth 4,Constituency A
+booth_9,booth,Booth 9,Constituency A
+booth_15,booth,Booth 15,Constituency A
+village_rampur,village,Rampur,Constituency A

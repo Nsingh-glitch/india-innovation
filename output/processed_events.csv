@@ -1,0 +1,16 @@
+raw_event_id,clean_text,language,translated_text,issue_category,sentiment,urgency,location_text,geo_unit_type,geo_unit_id,trust_score,cluster_id
+evt_001,ward 12 me 3 din se paani nahi aa raha log bahut pareshan hain,hinglish,ward 12 me 3 din se paani nahi aa raha log bahut pareshan hain,water,negative,low,Ward 12,ward,ward_12,0.5,cluster_water_ward_12
+evt_002,residents of ward 12 reported severe water shortage for the third consecutive day,en,residents of ward 12 reported severe water shortage for the third consecutive day,water,negative,high,Ward 12,ward,ward_12,0.7,cluster_water_ward_12
+evt_003,village members raised complaints about electricity outages in booth 4,en,village members raised complaints about electricity outages in booth 4,electricity,negative,high,Booth 4,booth,booth_4,0.85,cluster_electricity_booth_4
+evt_004,booth 9 road near school is broken and causing accidents,en,booth 9 road near school is broken and causing accidents,roads,negative,high,Booth 9,booth,booth_9,0.8,cluster_roads_booth_9
+evt_005,sadak bahut kharab hai ward 9 ke school ke paas,hinglish,sadak bahut kharab hai ward 9 ke school ke paas,roads,negative,low,Ward 9,ward,ward_9,0.5,cluster_roads_ward_9
+evt_006,pension payment delay issue in village rampur,fr,pension payment delay issue in village rampur,pensions,negative,medium,Rampur,village,village_rampur,0.8,cluster_pensions_village_rampur
+evt_007,bijli 2 din se nahi hai booth 4 me,hinglish,bijli 2 din se nahi hai booth 4 me,electricity,negative,low,Booth 4,booth,booth_4,0.5,cluster_electricity_booth_4
+evt_008,citizens in village rampur complained that pension distribution is delayed,en,citizens in village rampur complained that pension distribution is delayed,pensions,negative,medium,Rampur,village,village_rampur,0.7,cluster_pensions_village_rampur
+evt_009,ward 7 has a sanitation issue due to garbage not being collected,en,ward 7 has a sanitation issue due to garbage not being collected,sanitation,negative,medium,Ward 7,ward,ward_7,0.85,cluster_sanitation_ward_7
+evt_010,health center in ward 5 lacks medicine stock,en,health center in ward 5 lacks medicine stock,healthcare,negative,high,Ward 5,ward,ward_5,0.8,cluster_healthcare_ward_5
+evt_011,ward 7 ki galiyon me kachra pada hai koi uthane nahi aata,hinglish,ward 7 ki galiyon me kachra pada hai koi uthane nahi aata,other,negative,low,Ward 7,ward,ward_7,0.5,cluster_other_ward_7
+evt_012,primary health center in ward 5 faces shortage of essential medicines,en,primary health center in ward 5 faces shortage of essential medicines,healthcare,negative,low,Ward 5,ward,ward_5,0.7,cluster_healthcare_ward_5
+evt_013,discussion on street light repairs in booth 15 many lights are non functional,en,discussion on street light repairs in booth 15 many lights are non functional,other,neutral,low,Booth 15,booth,booth_15,0.85,cluster_other_booth_15
+evt_014,water logging reported near the main market area in ward 3 after last night s rain,en,water logging reported near the main market area in ward 3 after last night s rain,water,neutral,low,Ward 3,ward,ward_3,0.8,cluster_water_ward_3
+evt_015,booth 15 ki road pe bilkul andhera hai street lights kaam nahi kar rahi,hinglish,booth 15 ki road pe bilkul andhera hai street lights kaam nahi kar rahi,roads,negative,low,Booth 15,booth,booth_15,0.5,cluster_roads_booth_15
