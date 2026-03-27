@@ -77,7 +77,7 @@ function Navbar() {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link custom-nav-link" to="#">
+                <Link className="nav-link custom-nav-link" to="/news">
                   Latest News
                 </Link>
               </li>

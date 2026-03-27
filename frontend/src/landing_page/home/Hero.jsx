@@ -133,6 +133,7 @@ function Hero() {
         >
           {/* PRIMARY */}
           <button
+            onClick={() => navigate("/dashboard")} 
             style={{
                 background: "rgba(37,99,235,0.9)",
                 color: "#fff",

@@ -1,0 +1,153 @@
+/* PAGE */
+.alerts-page {
+  padding: 24px;
+}
+
+/* 🔥 HEADER BAR (FIXED + BIGGER) */
+.alerts-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: linear-gradient(90deg, #fee2e2, #fecaca);
+  color: #b91c1c;
+
+  padding: 14px 18px;
+  border-radius: 12px;
+
+  margin-bottom: 30px; /* 🔥 SPACE BETWEEN HEADER & CARDS */
+
+  font-size: 18px;
+  font-weight: 700;
+
+  box-shadow: 0 6px 16px rgba(239, 68, 68, 0.15);
+  position: relative;
+}
+
+/* ICON SIZE */
+.alerts-header svg {
+  font-size: 22px;
+}
+
+/* OPTIONAL GLOW */
+.alerts-header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: rgba(239, 68, 68, 0.1);
+  filter: blur(20px);
+  z-index: -1;
+}
+
+/* 🔥 GRID */
+.alerts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* 🔥 CARD */
+.alert-card {
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.alert-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* LEFT GLOW STRIP */
+.alert-card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 6px;
+  border-radius: 6px;
+}
+
+/* COLORS */
+.alert-card.red::before {
+  background: linear-gradient(#ef4444, #b91c1c);
+}
+
+.alert-card.yellow::before {
+  background: linear-gradient(#facc15, #ca8a04);
+}
+
+.alert-card.green::before {
+  background: linear-gradient(#22c55e, #15803d);
+}
+
+/* 🔥 HEADER */
+.alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.alert-header h3 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* 🔥 BADGE */
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(239, 68, 68, 0.1);
+  color: #b91c1c;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 🔥 DETAILS */
+.alert-details p {
+  font-size: 14px;
+  margin: 6px 0;
+  color: #334155;
+}
+
+/* 🔥 PROGRESS BAR */
+.progress {
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin: 12px 0;
+}
+
+.progress-bar {
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* COLOR BAR */
+.alert-card.red .progress-bar {
+  background: linear-gradient(to right, #ef4444, #b91c1c);
+}
+
+.alert-card.yellow .progress-bar {
+  background: linear-gradient(to right, #facc15, #ca8a04);
+}
+
+.alert-card.green .progress-bar {
+  background: linear-gradient(to right, #22c55e, #15803d);
+}
+
+/* 🔥 TRUST */
+.trust {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 6px;
+}

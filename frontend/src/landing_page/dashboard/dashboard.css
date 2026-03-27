@@ -1,0 +1,214 @@
+/* 🔥 RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🌍 PAGE */
+.dashboard {
+  background: #f1f5f9;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+/* 🔥 TOPBAR */
+.topbar {
+  height: 60px;
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* TITLE */
+.title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.clickable {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.clickable:hover {
+  color: #4f46e5;
+}
+
+/* 🔥 HAMBURGER */
+.hamburger {
+  width: 40px;
+  height: 40px;
+  background: #f1f5f9;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hamburger:hover {
+  background: #e2e8f0;
+}
+
+/* 🔥 SIDEBAR */
+/* 🔥 SIDEBAR (LIGHT THEME) */
+/* 🔥 SIDEBAR (LIGHT BLUE PREMIUM) */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 260px;
+  height: 100%;
+  background: #eff6ff; /* 🔥 LIGHTEST BLUE */
+  color: #1e3a8a;
+  padding: 20px;
+  transition: 0.3s ease;
+  z-index: 1500;
+  box-shadow: 4px 0 25px rgba(0,0,0,0.08);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* LOGO */
+.logo {
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+/* MENU ITEMS */
+.menu-item {
+  padding: 12px 14px;
+  margin-top: 10px;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #475569;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* 🔥 HOVER */
+.menu-item:hover {
+  background: #dbeafe; /* light blue hover */
+  color: #1e40af;
+  transform: translateX(4px);
+}
+
+/* 🔥 ACTIVE */
+.menu-item.active {
+  background: #bfdbfe; /* slightly darker */
+  color: #1e3a8a;
+  font-weight: 500;
+  border-left: 4px solid #3b82f6;
+  padding-left: 10px;
+}
+
+/* 🔥 OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  z-index: 1400;
+}
+
+/* 🔥 MAIN CONTENT */
+.main {
+  padding: 20px;
+  transition: 0.3s ease;
+}
+
+/* SHIFT WHEN SIDEBAR OPEN */
+.main.shifted {
+  margin-left: 260px;
+}
+
+/* 🔥 OVERVIEW WRAPPER (IMPORTANT FIX) */
+.overview {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* 🔥 FIX: vertical spacing */
+}
+
+/* 🔥 STATS GRID */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* STAT CARDS */
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  border: 1px solid #e2e8f0;
+  transition: 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 🔥 CHART GRID */
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* 🔥 CHART CARD */
+.chart-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  border: 1px solid #e2e8f0;
+  transition: 0.2s;
+}
+
+.chart-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 🔥 HEATMAP */
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.heatmap-cell {
+  padding: 14px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.25s;
+}
+
+.heatmap-cell:hover {
+  transform: scale(1.05);
+}
+
+/* 🔥 RESPONSIVE */
+@media (max-width: 768px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main.shifted {
+    margin-left: 0;
+  }
+}
