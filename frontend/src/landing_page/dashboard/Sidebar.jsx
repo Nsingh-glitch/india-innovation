@@ -3,11 +3,11 @@ export default function Sidebar({ open, setOpen, active, setActive }) {
     { id: "overview", label: "📊 Overview" },
     { id: "alerts", label: "🚨 Alerts" },
     { id: "scripts", label: "🤖 Scripts" },
+    { id: "reports", label: "📑 Reports & Suggestions" }, // ✅ NEW
   ];
 
   return (
     <div className={`sidebar ${open ? "open" : ""}`}>
-      
       <h2 className="logo">LokPulse</h2>
 
       {menu.map((item) => (
@@ -22,7 +22,6 @@ export default function Sidebar({ open, setOpen, active, setActive }) {
           {item.label}
         </div>
       ))}
-
     </div>
   );
 }

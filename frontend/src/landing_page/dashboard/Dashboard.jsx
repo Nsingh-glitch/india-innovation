@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+
 import Sidebar from "./Sidebar";
 import Overview from "./components/Overview";
 import Alerts from "./components/Alerts";
 import ScriptGen from "./components/ScriptGen";
+import Reports from "./components/Reports"; // ✅ NEW
+
 import "./dashboard.css";
 
 export default function Dashboard() {
@@ -16,16 +19,22 @@ export default function Dashboard() {
 
       {/* 🔥 TOPBAR */}
       <div className="topbar">
-        <button className="hamburger" onClick={() => setOpen(!open)}>
+        <button
+          className="hamburger"
+          onClick={() => setOpen(!open)}
+        >
           {open ? "✖" : "☰"}
         </button>
 
-        <h2 className="title clickable" onClick={() => navigate("/")}>
+        <h2
+          className="title clickable"
+          onClick={() => navigate("/")}
+        >
           LokPulse
         </h2>
       </div>
 
-      {/* SIDEBAR */}
+      {/* 🔥 SIDEBAR */}
       <Sidebar
         open={open}
         setOpen={setOpen}
@@ -33,14 +42,25 @@ export default function Dashboard() {
         setActive={setActive}
       />
 
-      {/* OVERLAY */}
-      {open && <div className="overlay" onClick={() => setOpen(false)} />}
+      {/* 🔥 OVERLAY */}
+      {open && (
+        <div
+          className="overlay"
+          onClick={() => setOpen(false)}
+        />
+      )}
 
-      {/* 🔥 MAIN (SHIFTED WHEN OPEN) */}
+      {/* 🔥 MAIN CONTENT */}
       <div className={`main ${open ? "shifted" : ""}`}>
+
         {active === "overview" && <Overview />}
+
         {active === "alerts" && <Alerts />}
+
         {active === "scripts" && <ScriptGen />}
+
+        {active === "reports" && <Reports />} {/* ✅ NEW */}
+
       </div>
 
     </div>

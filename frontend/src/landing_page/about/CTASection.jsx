@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 function CTASection() {
+  const navigate = useNavigate();
   return (
     <section
       style={{
@@ -22,6 +24,7 @@ function CTASection() {
 
       {/* 🔥 ANIMATED BUTTON */}
       <motion.button
+      onClick={() => navigate("/dashboard")} 
         whileHover={{
           scale: 1.08,
           y: -3,

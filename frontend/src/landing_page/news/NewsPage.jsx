@@ -18,15 +18,15 @@ export default function NewsPage() {
         return;
       }
 
-    const res = await fetch(
-  `https://newsapi.org/v2/everything?q=${encodeURIComponent(
-    "india water OR electricity OR roads OR sanitation OR healthcare OR pensions OR public issues"
-  )}&sortBy=publishedAt&pageSize=12&language=en&apiKey=${API_KEY}`
-);
-      const data = await res.json();
-      console.log(data); // 🔍 debug
+      const res = await fetch(
+        `https://newsapi.org/v2/everything?q=${encodeURIComponent(
+          "india water OR electricity OR roads OR sanitation OR healthcare OR pensions OR public issues"
+        )}&sortBy=publishedAt&pageSize=12&language=en&apiKey=${API_KEY}`
+      );
 
+      const data = await res.json();
       setArticles(data.articles || []);
+
     } catch (err) {
       console.error(err);
     }
@@ -35,11 +35,13 @@ export default function NewsPage() {
   return (
     <div className="news-page">
 
+      {/* HEADER */}
       <h1 className="news-title">
-  <img src={newsLogo} alt="news" className="news-img" />
-  Latest News
-</h1>
+        <img src={newsLogo} alt="news" className="news-img" />
+        Latest News
+      </h1>
 
+      {/* GRID */}
       <div className="news-grid">
         {articles.map((news, i) => (
           <div key={i} className="news-card">

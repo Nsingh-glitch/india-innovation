@@ -18,11 +18,19 @@ export default function Overview() {
   }, []);
 
   async function fetchData() {
-    const { data } = await supabase
-      .from("processed_events")
-      .select("*");
+    try {
+      const { data, error } = await supabase
+        .from("processed_events")
+        .select("*");
 
-    setData(data || []);
+      if (error) {
+        console.error(error);
+      } else {
+        setData(data || []);
+      }
+    } catch (err) {
+      console.error(err);
+    }
   }
 
   // 🔥 PROCESS DATA
@@ -32,14 +40,11 @@ export default function Overview() {
   const trustTrend = [];
 
   data.forEach((d, index) => {
-    // sentiment
     sentiment[d.sentiment] = (sentiment[d.sentiment] || 0) + 1;
 
-    // category
     category[d.issue_category] =
       (category[d.issue_category] || 0) + 1;
 
-    // ✅ FIXED REGION FIELD
     const region = d.location_text || "Unknown";
 
     if (d.sentiment === "negative") {
@@ -47,14 +52,12 @@ export default function Overview() {
         (negativeByRegion[region] || 0) + 1;
     }
 
-    // trust trend
     trustTrend.push({
       index: index + 1,
       trust: d.trust_score || 0,
     });
   });
 
-  // 🔥 FORMAT DATA
   const sentimentData = Object.entries(sentiment).map(([k, v]) => ({
     name: k,
     value: v,
@@ -67,50 +70,64 @@ export default function Overview() {
 
   const max = Math.max(...Object.values(negativeByRegion), 1);
 
-  // 🔥 HEATMAP COLOR (RED-YELLOW-GREEN)
   function getHeatmapColor(value) {
     const ratio = value / max;
-
-    if (ratio < 0.33) return "#22c55e"; // green
-    if (ratio < 0.66) return "#facc15"; // yellow
-    return "#ef4444"; // red
+    if (ratio < 0.33) return "#22c55e";
+    if (ratio < 0.66) return "#facc15";
+    return "#ef4444";
   }
 
   return (
     <div className="overview">
 
-      {/* 🔥 STATS */}
+      {/* STATS */}
       <div className="stats-grid">
         <div className="stat-card">
           <p>Total Issues</p>
           <h2>{data.length}</h2>
         </div>
 
-        <div className="stat-card red">
+        <div className="stat-card">
           <p>Negative</p>
           <h2>{sentiment["negative"] || 0}</h2>
         </div>
 
-        <div className="stat-card blue">
+        <div className="stat-card">
           <p>Regions</p>
           <h2>{Object.keys(negativeByRegion).length}</h2>
         </div>
       </div>
 
-      {/* 🔥 CHARTS */}
+      {/* CHARTS */}
       <div className="charts-grid">
 
-        {/* PIE */}
+        {/* 🔥 PIE (FIXED) */}
         <div className="chart-card">
           <h3>Sentiment Distribution</h3>
           <ResponsiveContainer width="100%" height={250}>
             <PieChart>
-              <Pie data={sentimentData} dataKey="value">
+              <Pie
+                data={sentimentData}
+                dataKey="value"
+                nameKey="name"   // 🔥 IMPORTANT
+              >
                 {sentimentData.map((_, i) => (
                   <Cell key={i} fill={COLORS[i % COLORS.length]} />
                 ))}
               </Pie>
-              <Tooltip />
+
+              {/* 🔥 FIXED TOOLTIP */}
+              <Tooltip
+                contentStyle={{
+                  background: "#0f172a",
+                  border: "none",
+                  borderRadius: "8px",
+                  color: "#e2e8f0"
+                }}
+                formatter={(value, name) => [
+                  `${name.toUpperCase()} : ${value}`
+                ]}
+              />
             </PieChart>
           </ResponsiveContainer>
         </div>
@@ -120,9 +137,20 @@ export default function Overview() {
           <h3>Issue Categories</h3>
           <ResponsiveContainer width="100%" height={250}>
             <BarChart data={categoryData}>
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
+              <XAxis dataKey="name" stroke="#94a3b8" />
+              <YAxis stroke="#94a3b8" />
+
+              <Tooltip
+                contentStyle={{
+                  background: "#0f172a",
+                  border: "none",
+                  borderRadius: "8px",
+                  color: "#e2e8f0"
+                }}
+                formatter={(value) => [`${value}`, "Value"]}
+                cursor={{ fill: "rgba(59,130,246,0.1)" }}
+              />
+
               <Bar dataKey="value" fill="#4F46E5" />
             </BarChart>
           </ResponsiveContainer>
@@ -130,14 +158,24 @@ export default function Overview() {
 
       </div>
 
-      {/* 🔥 LINE CHART */}
+      {/* LINE */}
       <div className="chart-card">
         <h3>Trust Score Trend</h3>
         <ResponsiveContainer width="100%" height={250}>
           <LineChart data={trustTrend}>
-            <XAxis dataKey="index" />
-            <YAxis domain={[0, 1]} />
-            <Tooltip />
+            <XAxis dataKey="index" stroke="#94a3b8" />
+            <YAxis domain={[0, 1]} stroke="#94a3b8" />
+
+            <Tooltip
+              contentStyle={{
+                background: "#0f172a",
+                border: "none",
+                borderRadius: "8px",
+                color: "#e2e8f0"
+              }}
+              formatter={(value) => value.toFixed(2)}
+            />
+
             <Line
               type="monotone"
               dataKey="trust"
@@ -148,7 +186,7 @@ export default function Overview() {
         </ResponsiveContainer>
       </div>
 
-      {/* 🔥 HEATMAP */}
+      {/* HEATMAP */}
       <div className="chart-card">
         <h3>🔥 Negative Sentiment by Region</h3>
 
@@ -157,9 +195,7 @@ export default function Overview() {
             <div
               key={region}
               className="heatmap-cell"
-              style={{
-                background: getHeatmapColor(value),
-              }}
+              style={{ background: getHeatmapColor(value) }}
             >
               <span>{region}</span>
               <strong>{value}</strong>
