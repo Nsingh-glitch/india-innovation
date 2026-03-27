@@ -1,0 +1,25 @@
+:root {
+  --text: #1f2937;
+  --bg: #ffffff;
+  --accent: #7c3aed;
+
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #f3f4f6;
+    --bg: #0f172a;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#root {
+  min-height: 100vh;
+}

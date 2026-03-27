@@ -1,0 +1,401 @@
+id,raw_event_id,clean_text,language,translated_text,issue_category,sentiment,urgency,location_text,geo_unit_type,geo_unit_id,trust_score,cluster_id
+1,evt_001,"Ward 2 mein sanitation ki samasya hai",hinglish,"Sanitation issue reported in Ward 2",sanitation,negative,low,Ward 2,ward,ward_2,0.87,cluster_sanitation_ward2
+2,evt_002,"There's a sewage overflow on MG Road, Ward 4",en,"Sewage overflow reported on MG Road, Ward 4",sewage,negative,high,Ward 4,ward,ward_4,0.94,cluster_sewage_ward4
+3,evt_003,"வார்டு 6-ல் தண்ணீர் இல்லை",ta,"No water in Ward 6",water,negative,medium,Ward 6,ward,ward_6,0.82,cluster_water_ward6
+4,evt_004,"Ward 3 me road full of potholes, bekar condition",hinglish,"Poor road condition with potholes in Ward 3",roads,negative,high,Ward 3,ward,ward_3,0.91,cluster_roads_ward3
+5,evt_005,"Garbage not collected since 3 days in Ward 4",en,"Garbage not collected for three days in Ward 4",garbage,negative,medium,Ward 4,ward,ward_4,0.79,cluster_garbage_ward4
+6,evt_006,"वार्ड 1 में बिजली की समस्या",hi,"Electricity issue in Ward 1",electricity,negative,low,Ward 1,ward,ward_1,0.88,cluster_electricity_ward1
+7,evt_007,"Ward 7 lo drainage block ayyindi",te,"Drainage blocked in Ward 7",drainage,negative,high,Ward 7,ward,ward_7,0.93,cluster_drainage_ward7
+8,evt_008,"Streetlights not working in Ward 7 for a week",en,"Streetlights non-functional for a week in Ward 7",streetlight,negative,medium,Ward 7,ward,ward_7,0.85,cluster_streetlight_ward7
+9,evt_009,"Ward 7 mein sadak ke gaddhe, khatarnak",hinglish,"Dangerous potholes on roads in Ward 7",roads,negative,high,Ward 7,ward,ward_7,0.90,cluster_roads_ward7
+10,evt_010,"Health centre in Ward 4 lacks medicines",en,"Healthcare centre in Ward 4 facing medicine shortage",healthcare,negative,medium,Ward 4,ward,ward_4,0.83,cluster_healthcare_ward4
+11,evt_011,"Ward 5 me paani ki tanki khali hai",hinglish,"Water tank empty in Ward 5",water,negative,high,Ward 5,ward,ward_5,0.76,cluster_water_ward5
+12,evt_012,"Mosquito menace due to stagnant water in Ward 3",en,"Stagnant water causing mosquito problem in Ward 3",sanitation,negative,medium,Ward 3,ward,ward_3,0.89,cluster_sanitation_ward3
+13,evt_013,"वार्ड 8 में सड़कें बुरी हालत में",hi,"Roads in bad condition in Ward 8",roads,negative,low,Ward 8,ward,ward_8,0.81,cluster_roads_ward8
+14,evt_014,"Ward 2 kuppa kasa nillada thappa",ta,"Garbage not cleared in Ward 2",garbage,negative,high,Ward 2,ward,ward_2,0.95,cluster_garbage_ward2
+15,evt_015,"Frequent power cuts in Ward 6",en,"Frequent power cuts in Ward 6",electricity,negative,medium,Ward 6,ward,ward_6,0.84,cluster_electricity_ward6
+16,evt_016,"Ward 1 drainage system choked",en,"Drainage system choked in Ward 1",drainage,negative,high,Ward 1,ward,ward_1,0.92,cluster_drainage_ward1
+17,evt_017,"Ward 7 mein streetlights bandh",hinglish,"Streetlights off in Ward 7",streetlight,negative,low,Ward 7,ward,ward_7,0.77,cluster_streetlight_ward7
+18,evt_018,"No doctor at Ward 5 health post",en,"No doctor available at Ward 5 health post",healthcare,negative,high,Ward 5,ward,ward_5,0.86,cluster_healthcare_ward5
+19,evt_019,"వార్డు 4 లో మురికి కుప్పలు",te,"Heaps of garbage in Ward 4",garbage,negative,medium,Ward 4,ward,ward_4,0.80,cluster_garbage_ward4
+20,evt_020,"Ward 2 me nali block hai, badbu aa rahi",hinglish,"Drain blocked in Ward 2, foul smell emanating",drainage,negative,high,Ward 2,ward,ward_2,0.88,cluster_drainage_ward2
+21,evt_021,"Water supply erratic in Ward 8",en,"Erratic water supply in Ward 8",water,negative,medium,Ward 8,ward,ward_8,0.79,cluster_water_ward8
+22,evt_022,"Ward 6 me bijli ka bill zyada aaya, par supply kam",hinglish,"High electricity bill but low supply in Ward 6",electricity,negative,low,Ward 6,ward,ward_6,0.74,cluster_electricity_ward6
+23,evt_023,"Roads in Ward 4 have deep craters",en,"Deep craters on roads in Ward 4",roads,negative,high,Ward 4,ward,ward_4,0.93,cluster_roads_ward4
+24,evt_024,"वार्ड 3 में सीवेज का पानी सड़क पर",hi,"Sewage water on the road in Ward 3",sewage,negative,medium,Ward 3,ward,ward_3,0.87,cluster_sewage_ward3
+25,evt_025,"Ward 5 me healthcare facility not good",en,"Poor healthcare facility in Ward 5",healthcare,negative,low,Ward 5,ward,ward_5,0.82,cluster_healthcare_ward5
+26,evt_026,"Garbage truck missing for days in Ward 7",en,"Garbage truck absent for days in Ward 7",garbage,negative,high,Ward 7,ward,ward_7,0.91,cluster_garbage_ward7
+27,evt_027,"Ward 2 me water pipeline burst",hinglish,"Water pipeline burst in Ward 2",water,negative,medium,Ward 2,ward,ward_2,0.78,cluster_water_ward2
+28,evt_028,"Streetlights not working since a month in Ward 1",en,"Streetlights non-functional for a month in Ward 1",streetlight,negative,high,Ward 1,ward,ward_1,0.84,cluster_streetlight_ward1
+29,evt_029,"Ward 3 me open drain dangerous",hinglish,"Open drain dangerous in Ward 3",drainage,negative,medium,Ward 3,ward,ward_3,0.89,cluster_drainage_ward3
+30,evt_030,"வார்டு 5-ல் மின்சாரம் தடை",ta,"Power outage in Ward 5",electricity,negative,low,Ward 5,ward,ward_5,0.76,cluster_electricity_ward5
+31,evt_031,"Ward 8 me kachra nahi uthaya jaa raha",hinglish,"Garbage not being collected in Ward 8",garbage,negative,high,Ward 8,ward,ward_8,0.95,cluster_garbage_ward8
+32,evt_032,"Poor road condition near Ward 4 market",en,"Poor road condition near Ward 4 market",roads,negative,medium,Ward 4,ward,ward_4,0.85,cluster_roads_ward4
+33,evt_033,"Ward 6 mein paani ki kami",hinglish,"Water scarcity in Ward 6",water,negative,high,Ward 6,ward,ward_6,0.92,cluster_water_ward6
+34,evt_034,"No streetlights in Ward 2 lanes",en,"No streetlights in lanes of Ward 2",streetlight,negative,low,Ward 2,ward,ward_2,0.79,cluster_streetlight_ward2
+35,evt_035,"వార్డు 7 లో విద్యుత్ స్తంభం పడిపోయింది",te,"Electric pole fell down in Ward 7",electricity,negative,high,Ward 7,ward,ward_7,0.87,cluster_electricity_ward7
+36,evt_036,"Ward 1 me drainage water logging",hinglish,"Drainage water logging in Ward 1",drainage,negative,medium,Ward 1,ward,ward_1,0.83,cluster_drainage_ward1
+37,evt_037,"Health centre closed on weekends in Ward 3",en,"Health centre closed on weekends in Ward 3",healthcare,negative,low,Ward 3,ward,ward_3,0.77,cluster_healthcare_ward3
+38,evt_038,"Ward 5 mein roads kachche, mud problem",hinglish,"Unpaved roads, mud problem in Ward 5",roads,negative,high,Ward 5,ward,ward_5,0.90,cluster_roads_ward5
+39,evt_039,"Sewage smells in Ward 8 colony",en,"Sewage smell in Ward 8 colony",sewage,negative,medium,Ward 8,ward,ward_8,0.81,cluster_sewage_ward8
+40,evt_040,"वार्ड 2 में पानी की टंकी लीक",hi,"Water tank leaking in Ward 2",water,negative,high,Ward 2,ward,ward_2,0.86,cluster_water_ward2
+41,evt_041,"Ward 6 garbage dumping near school",en,"Garbage dumping near school in Ward 6",garbage,negative,high,Ward 6,ward,ward_6,0.94,cluster_garbage_ward6
+42,evt_042,"Ward 3 me streetlight nahi, andhera",hinglish,"No streetlight, darkness in Ward 3",streetlight,negative,medium,Ward 3,ward,ward_3,0.75,cluster_streetlight_ward3
+43,evt_043,"வார்டு 4-ல் மருத்துவமனை பணியாளர் பற்றாக்குறை",ta,"Hospital staff shortage in Ward 4",healthcare,negative,low,Ward 4,ward,ward_4,0.78,cluster_healthcare_ward4
+44,evt_044,"Power fluctuations damaging appliances in Ward 1",en,"Power fluctuations damaging appliances in Ward 1",electricity,negative,high,Ward 1,ward,ward_1,0.92,cluster_electricity_ward1
+45,evt_045,"Ward 7 me nala saaf nahi hua",hinglish,"Drain not cleaned in Ward 7",drainage,negative,medium,Ward 7,ward,ward_7,0.84,cluster_drainage_ward7
+46,evt_046,"Roads in Ward 4 have no footpath",en,"No footpath on roads in Ward 4",roads,negative,low,Ward 4,ward,ward_4,0.73,cluster_roads_ward4
+47,evt_047,"Ward 5 mein water logging during rain",hinglish,"Water logging during rain in Ward 5",water,negative,high,Ward 5,ward,ward_5,0.89,cluster_water_ward5
+48,evt_048,"वार्ड 8 में सीवेज ट्रीटमेंट प्लांट खराब",hi,"Sewage treatment plant malfunction in Ward 8",sewage,negative,medium,Ward 8,ward,ward_8,0.82,cluster_sewage_ward8
+49,evt_049,"Ward 2 me bijli ki tarah behaal",hinglish,"Electricity situation terrible in Ward 2",electricity,negative,high,Ward 2,ward,ward_2,0.77,cluster_electricity_ward2
+50,evt_050,"Garbage burning causing pollution in Ward 6",en,"Garbage burning causing pollution in Ward 6",garbage,negative,high,Ward 6,ward,ward_6,0.91,cluster_garbage_ward6
+51,evt_051,"Ward 3 health centre has no ambulance",en,"No ambulance at Ward 3 health centre",healthcare,negative,medium,Ward 3,ward,ward_3,0.80,cluster_healthcare_ward3
+52,evt_052,"వార్డు 1 లో రోడ్లు దెబ్బతిన్నాయి",te,"Roads damaged in Ward 1",roads,negative,low,Ward 1,ward,ward_1,0.86,cluster_roads_ward1
+53,evt_053,"Ward 7 me open manhole, child fell",hinglish,"Open manhole in Ward 7, child fell",drainage,negative,high,Ward 7,ward,ward_7,0.96,cluster_drainage_ward7
+54,evt_054,"Streetlights not working in Ward 5 main road",en,"Streetlights not working on Ward 5 main road",streetlight,negative,medium,Ward 5,ward,ward_5,0.79,cluster_streetlight_ward5
+55,evt_055,"Ward 4 me pani ki supply kam hai",hinglish,"Low water supply in Ward 4",water,negative,high,Ward 4,ward,ward_4,0.85,cluster_water_ward4
+56,evt_056,"வார்டு 8-ல் குப்பை தொட்டி நிரம்பியுள்ளது",ta,"Garbage bin overflowing in Ward 8",garbage,negative,medium,Ward 8,ward,ward_8,0.83,cluster_garbage_ward8
+57,evt_057,"Frequent transformer blast in Ward 3",en,"Frequent transformer blast in Ward 3",electricity,negative,high,Ward 3,ward,ward_3,0.94,cluster_electricity_ward3
+58,evt_058,"Ward 2 me sadak par gaddhe, accident hua",hinglish,"Potholes on road in Ward 2, accident occurred",roads,negative,high,Ward 2,ward,ward_2,0.90,cluster_roads_ward2
+59,evt_059,"No proper sanitation in Ward 6 slum",en,"No proper sanitation in Ward 6 slum",sanitation,negative,medium,Ward 6,ward,ward_6,0.81,cluster_sanitation_ward6
+60,evt_060,"वार्ड 7 में नाली का पानी घर में घुसा",hi,"Drainage water entered house in Ward 7",drainage,negative,high,Ward 7,ward,ward_7,0.93,cluster_drainage_ward7
+61,evt_061,"Ward 1 me streetlight repair pending",hinglish,"Streetlight repair pending in Ward 1",streetlight,negative,low,Ward 1,ward,ward_1,0.76,cluster_streetlight_ward1
+62,evt_062,"Health workers on strike in Ward 5",en,"Health workers on strike in Ward 5",healthcare,negative,high,Ward 5,ward,ward_5,0.88,cluster_healthcare_ward5
+63,evt_063,"Ward 4 me kachra jala rahe log",hinglish,"People burning garbage in Ward 4",garbage,negative,medium,Ward 4,ward,ward_4,0.77,cluster_garbage_ward4
+64,evt_064,"వార్డు 6 లో త్రాగునీరు కలుషితం",te,"Drinking water contaminated in Ward 6",water,negative,high,Ward 6,ward,ward_6,0.95,cluster_water_ward6
+65,evt_065,"Roads in Ward 8 have no drainage",en,"No drainage on roads in Ward 8",roads,negative,medium,Ward 8,ward,ward_8,0.82,cluster_roads_ward8
+66,evt_066,"Ward 3 me bijli ka pole jhuk raha",hinglish,"Electric pole leaning in Ward 3",electricity,negative,high,Ward 3,ward,ward_3,0.89,cluster_electricity_ward3
+67,evt_067,"Sewage leak near Ward 2 temple",en,"Sewage leak near temple in Ward 2",sewage,negative,medium,Ward 2,ward,ward_2,0.84,cluster_sewage_ward2
+68,evt_068,"Ward 7 me healthcare staff rude",hinglish,"Rude healthcare staff in Ward 7",healthcare,negative,low,Ward 7,ward,ward_7,0.73,cluster_healthcare_ward7
+69,evt_069,"வார்டு 1-ல் தெருவிளக்குகள் இல்லை",ta,"No streetlights in Ward 1",streetlight,negative,high,Ward 1,ward,ward_1,0.86,cluster_streetlight_ward1
+70,evt_070,"Garbage strewn all over Ward 5 park",en,"Garbage strewn all over Ward 5 park",garbage,negative,medium,Ward 5,ward,ward_5,0.79,cluster_garbage_ward5
+71,evt_071,"Ward 8 me water pressure bahut kam",hinglish,"Very low water pressure in Ward 8",water,negative,high,Ward 8,ward,ward_8,0.92,cluster_water_ward8
+72,evt_072,"Roads in Ward 4 dug up for months",en,"Roads dug up for months in Ward 4",roads,negative,high,Ward 4,ward,ward_4,0.87,cluster_roads_ward4
+73,evt_073,"वार्ड 3 में बिजली के तार खुले",hi,"Open electrical wires in Ward 3",electricity,negative,high,Ward 3,ward,ward_3,0.94,cluster_electricity_ward3
+74,evt_074,"Ward 6 me nali block, mosquito",hinglish,"Blocked drain in Ward 6, mosquitoes",drainage,negative,medium,Ward 6,ward,ward_6,0.80,cluster_drainage_ward6
+75,evt_075,"Health centre lacks emergency services in Ward 2",en,"Health centre lacks emergency services in Ward 2",healthcare,negative,low,Ward 2,ward,ward_2,0.75,cluster_healthcare_ward2
+76,evt_076,"Ward 7 mein garbage truck skip kar raha",hinglish,"Garbage truck skipping in Ward 7",garbage,negative,high,Ward 7,ward,ward_7,0.91,cluster_garbage_ward7
+77,evt_077,"వార్డు 5 లో మురికి కాలువ",te,"Sewage drain in Ward 5",sewage,negative,medium,Ward 5,ward,ward_5,0.83,cluster_sewage_ward5
+78,evt_078,"Streetlights not working near Ward 1 school",en,"Streetlights not working near Ward 1 school",streetlight,negative,high,Ward 1,ward,ward_1,0.88,cluster_streetlight_ward1
+79,evt_079,"Ward 4 me roads par water logging barish mein",hinglish,"Water logging on roads in Ward 4 during rain",water,negative,high,Ward 4,ward,ward_4,0.85,cluster_water_ward4
+80,evt_080,"No doctor at night in Ward 8 hospital",en,"No doctor at night in Ward 8 hospital",healthcare,negative,medium,Ward 8,ward,ward_8,0.79,cluster_healthcare_ward8
+81,evt_081,"Ward 3 me bijli ki samasya roz",hinglish,"Electricity problem daily in Ward 3",electricity,negative,high,Ward 3,ward,ward_3,0.93,cluster_electricity_ward3
+82,evt_082,"வார்டு 6-ல் குப்பை மேலாண்மை இல்லை",ta,"No garbage management in Ward 6",garbage,negative,low,Ward 6,ward,ward_6,0.81,cluster_garbage_ward6
+83,evt_083,"Sewage overflow onto streets in Ward 2",en,"Sewage overflow onto streets in Ward 2",sewage,negative,high,Ward 2,ward,ward_2,0.90,cluster_sewage_ward2
+84,evt_084,"Ward 5 me roads pe gaddhe, bike fall",hinglish,"Potholes on roads in Ward 5, bike fell",roads,negative,medium,Ward 5,ward,ward_5,0.86,cluster_roads_ward5
+85,evt_085,"Water supply only for 1 hour in Ward 7",en,"Water supply only for one hour in Ward 7",water,negative,high,Ward 7,ward,ward_7,0.94,cluster_water_ward7
+86,evt_086,"वार्ड 4 में नाली सफाई नहीं",hi,"Drain not cleaned in Ward 4",drainage,negative,medium,Ward 4,ward,ward_4,0.77,cluster_drainage_ward4
+87,evt_087,"Ward 1 me streetlight repair kaam slow",hinglish,"Streetlight repair work slow in Ward 1",streetlight,negative,low,Ward 1,ward,ward_1,0.74,cluster_streetlight_ward1
+88,evt_088,"Health centre in Ward 3 lacks basic medicines",en,"Health centre in Ward 3 lacks basic medicines",healthcare,negative,high,Ward 3,ward,ward_3,0.89,cluster_healthcare_ward3
+89,evt_089,"వార్డు 8 లో విద్యుత్ సరఫరా లేదు",te,"No electricity supply in Ward 8",electricity,negative,medium,Ward 8,ward,ward_8,0.78,cluster_electricity_ward8
+90,evt_090,"Ward 6 me garbage dump near river",hinglish,"Garbage dump near river in Ward 6",garbage,negative,high,Ward 6,ward,ward_6,0.92,cluster_garbage_ward6
+91,evt_091,"Roads in Ward 7 full of mud",en,"Roads full of mud in Ward 7",roads,negative,medium,Ward 7,ward,ward_7,0.80,cluster_roads_ward7
+92,evt_092,"Ward 2 me water tanker nahi aata",hinglish,"Water tanker does not come in Ward 2",water,negative,high,Ward 2,ward,ward_2,0.87,cluster_water_ward2
+93,evt_093,"வார்டு 4-ல் சாக்கடை தடை",ta,"Drainage blockage in Ward 4",drainage,negative,medium,Ward 4,ward,ward_4,0.82,cluster_drainage_ward4
+94,evt_094,"No streetlights in Ward 5 colony for safety",en,"No streetlights in Ward 5 colony, safety concern",streetlight,negative,high,Ward 5,ward,ward_5,0.95,cluster_streetlight_ward5
+95,evt_095,"Ward 3 health centre understaffed",en,"Health centre understaffed in Ward 3",healthcare,negative,low,Ward 3,ward,ward_3,0.76,cluster_healthcare_ward3
+96,evt_096,"Ward 8 me bijli ki line damage",hinglish,"Electric line damage in Ward 8",electricity,negative,high,Ward 8,ward,ward_8,0.84,cluster_electricity_ward8
+97,evt_097,"Sewage water mixing with drinking water in Ward 1",en,"Sewage water mixing with drinking water in Ward 1",sewage,negative,high,Ward 1,ward,ward_1,0.97,cluster_sewage_ward1
+98,evt_098,"वार्ड 5 में कचरा जलाने से बीमारी",hi,"Disease due to garbage burning in Ward 5",garbage,negative,medium,Ward 5,ward,ward_5,0.88,cluster_garbage_ward5
+99,evt_099,"Ward 6 me roads repair nahi",hinglish,"Roads not repaired in Ward 6",roads,negative,high,Ward 6,ward,ward_6,0.81,cluster_roads_ward6
+100,evt_100,"Water pipeline leak wasting water in Ward 4",en,"Water pipeline leak wasting water in Ward 4",water,negative,medium,Ward 4,ward,ward_4,0.79,cluster_water_ward4
+101,evt_101,"Ward 7 me open drain se badbu",hinglish,"Foul smell from open drain in Ward 7",drainage,negative,high,Ward 7,ward,ward_7,0.86,cluster_drainage_ward7
+102,evt_102,"வார்டு 2-ல் மின் தூண் சாய்ந்தது",ta,"Electric pole tilted in Ward 2",electricity,negative,low,Ward 2,ward,ward_2,0.83,cluster_electricity_ward2
+103,evt_103,"No sanitation workers in Ward 3",en,"No sanitation workers in Ward 3",sanitation,negative,high,Ward 3,ward,ward_3,0.90,cluster_sanitation_ward3
+104,evt_104,"Ward 8 me streetlight nahi, theft ho raha",hinglish,"No streetlight in Ward 8, theft happening",streetlight,negative,high,Ward 8,ward,ward_8,0.92,cluster_streetlight_ward8
+105,evt_105,"Health centre in Ward 6 lacks maternity care",en,"Health centre in Ward 6 lacks maternity care",healthcare,negative,medium,Ward 6,ward,ward_6,0.85,cluster_healthcare_ward6
+106,evt_106,"వార్డు 7 లో రోడ్లు మరమ్మత్తు లేదు",te,"Roads not repaired in Ward 7",roads,negative,high,Ward 7,ward,ward_7,0.88,cluster_roads_ward7
+107,evt_107,"Ward 1 me pani ki supply ganda",hinglish,"Dirty water supply in Ward 1",water,negative,high,Ward 1,ward,ward_1,0.94,cluster_water_ward1
+108,evt_108,"Sewage treatment plant non-functional in Ward 5",en,"Sewage treatment plant non-functional in Ward 5",sewage,negative,medium,Ward 5,ward,ward_5,0.80,cluster_sewage_ward5
+109,evt_109,"Ward 4 me bijli ka bill galat",hinglish,"Wrong electricity bill in Ward 4",electricity,negative,low,Ward 4,ward,ward_4,0.78,cluster_electricity_ward4
+110,evt_110,"Garbage dumped in open near Ward 2 school",en,"Garbage dumped in open near Ward 2 school",garbage,negative,high,Ward 2,ward,ward_2,0.91,cluster_garbage_ward2
+111,evt_111,"वार्ड 3 में स्ट्रीट लाइट नहीं, अंधेरा",hi,"No streetlight in Ward 3, darkness",streetlight,negative,medium,Ward 3,ward,ward_3,0.82,cluster_streetlight_ward3
+112,evt_112,"Ward 8 me healthcare facility door step nahi",hinglish,"Healthcare facility not at doorstep in Ward 8",healthcare,negative,high,Ward 8,ward,ward_8,0.86,cluster_healthcare_ward8
+113,evt_113,"Water logging in Ward 6 during light rain",en,"Water logging in Ward 6 even during light rain",water,negative,high,Ward 6,ward,ward_6,0.89,cluster_water_ward6
+114,evt_114,"வார்டு 1-ல் கழிவு நீர் தேங்கி நிற்கிறது",ta,"Sewage water stagnant in Ward 1",sewage,negative,medium,Ward 1,ward,ward_1,0.84,cluster_sewage_ward1
+115,evt_115,"Roads in Ward 7 have no markings",en,"No road markings in Ward 7",roads,negative,low,Ward 7,ward,ward_7,0.75,cluster_roads_ward7
+116,evt_116,"Ward 4 me drainage system jam",hinglish,"Drainage system jammed in Ward 4",drainage,negative,high,Ward 4,ward,ward_4,0.87,cluster_drainage_ward4
+117,evt_117,"No power backup at Ward 5 health centre",en,"No power backup at Ward 5 health centre",healthcare,negative,medium,Ward 5,ward,ward_5,0.79,cluster_healthcare_ward5
+118,evt_118,"Ward 2 me streetlight repair done but not working",hinglish,"Streetlight repaired but still not working in Ward 2",streetlight,negative,high,Ward 2,ward,ward_2,0.82,cluster_streetlight_ward2
+119,evt_119,"వార్డు 3 లో విద్యుత్ స్తంభం మంటలు",te,"Electric pole on fire in Ward 3",electricity,negative,high,Ward 3,ward,ward_3,0.96,cluster_electricity_ward3
+120,evt_120,"Garbage segregation not done in Ward 6",en,"Garbage segregation not done in Ward 6",garbage,negative,low,Ward 6,ward,ward_6,0.77,cluster_garbage_ward6
+121,evt_121,"Ward 8 me nala saaf nahi, beemari phail rahi",hinglish,"Drain not cleaned in Ward 8, disease spreading",drainage,negative,high,Ward 8,ward,ward_8,0.93,cluster_drainage_ward8
+122,evt_122,"वार्ड 4 में पानी की टंकी से बदबू",hi,"Foul smell from water tank in Ward 4",water,negative,medium,Ward 4,ward,ward_4,0.80,cluster_water_ward4
+123,evt_123,"No proper road in Ward 1 colony",en,"No proper road in Ward 1 colony",roads,negative,high,Ward 1,ward,ward_1,0.91,cluster_roads_ward1
+124,evt_124,"Ward 7 me bijli ka transformer blast",hinglish,"Transformer blast in Ward 7",electricity,negative,high,Ward 7,ward,ward_7,0.95,cluster_electricity_ward7
+125,evt_125,"வார்டு 5-ல் சுகாதார மையம் மூடப்பட்டது",ta,"Health centre closed in Ward 5",healthcare,negative,medium,Ward 5,ward,ward_5,0.83,cluster_healthcare_ward5
+126,evt_126,"Sewage leak in Ward 2 causing health issues",en,"Sewage leak in Ward 2 causing health issues",sewage,negative,high,Ward 2,ward,ward_2,0.89,cluster_sewage_ward2
+127,evt_127,"Ward 3 me garbage collection irregular",hinglish,"Irregular garbage collection in Ward 3",garbage,negative,low,Ward 3,ward,ward_3,0.76,cluster_garbage_ward3
+128,evt_128,"Streetlights not working in Ward 8 main bazaar",en,"Streetlights not working in Ward 8 main bazaar",streetlight,negative,high,Ward 8,ward,ward_8,0.88,cluster_streetlight_ward8
+129,evt_129,"Water quality bad in Ward 6",en,"Poor water quality in Ward 6",water,negative,medium,Ward 6,ward,ward_6,0.85,cluster_water_ward6
+130,evt_130,"वार्ड 7 में डॉक्टर नहीं मिलते",hi,"Doctors not available in Ward 7",healthcare,negative,high,Ward 7,ward,ward_7,0.92,cluster_healthcare_ward7
+131,evt_131,"Ward 4 me drainage construction incomplete",hinglish,"Drainage construction incomplete in Ward 4",drainage,negative,medium,Ward 4,ward,ward_4,0.78,cluster_drainage_ward4
+132,evt_132,"Roads in Ward 5 have no proper lighting",en,"No proper lighting on roads in Ward 5",roads,negative,low,Ward 5,ward,ward_5,0.74,cluster_roads_ward5
+133,evt_133,"Ward 1 me bijli ki wire tuti",hinglish,"Electric wire broken in Ward 1",electricity,negative,high,Ward 1,ward,ward_1,0.86,cluster_electricity_ward1
+134,evt_134,"வார்டு 8-ல் குப்பை சேகரிப்பு இல்லை",ta,"No garbage collection in Ward 8",garbage,negative,high,Ward 8,ward,ward_8,0.90,cluster_garbage_ward8
+135,evt_135,"Sewage flowing openly in Ward 3",en,"Sewage flowing openly in Ward 3",sewage,negative,medium,Ward 3,ward,ward_3,0.84,cluster_sewage_ward3
+136,evt_136,"Ward 2 me streetlight repair mein late",hinglish,"Delay in streetlight repair in Ward 2",streetlight,negative,low,Ward 2,ward,ward_2,0.79,cluster_streetlight_ward2
+137,evt_137,"Health centre in Ward 4 has no X-ray facility",en,"Health centre in Ward 4 has no X-ray facility",healthcare,negative,high,Ward 4,ward,ward_4,0.87,cluster_healthcare_ward4
+138,evt_138,"Water supply contaminated in Ward 5",en,"Water supply contaminated in Ward 5",water,negative,high,Ward 5,ward,ward_5,0.93,cluster_water_ward5
+139,evt_139,"वार्ड 6 में नाली का पानी रुका हुआ",hi,"Drainage water stagnant in Ward 6",drainage,negative,medium,Ward 6,ward,ward_6,0.81,cluster_drainage_ward6
+140,evt_140,"Ward 7 me roads pe kachra phaila",hinglish,"Garbage spread on roads in Ward 7",garbage,negative,high,Ward 7,ward,ward_7,0.88,cluster_garbage_ward7
+141,evt_141,"No streetlights in Ward 3 causing accidents",en,"No streetlights in Ward 3 causing accidents",streetlight,negative,high,Ward 3,ward,ward_3,0.94,cluster_streetlight_ward3
+142,evt_142,"Ward 1 me bijli ka voltage unstable",hinglish,"Unstable voltage in Ward 1",electricity,negative,medium,Ward 1,ward,ward_1,0.82,cluster_electricity_ward1
+143,evt_143,"வார்டு 2-ல் சுகாதார பணியாளர்கள் வேலைநிறுத்தம்",ta,"Health workers strike in Ward 2",healthcare,negative,high,Ward 2,ward,ward_2,0.85,cluster_healthcare_ward2
+144,evt_144,"Sewage pipeline broken in Ward 6",en,"Sewage pipeline broken in Ward 6",sewage,negative,medium,Ward 6,ward,ward_6,0.80,cluster_sewage_ward6
+145,evt_145,"Ward 8 me water tanker paani nahi",hinglish,"Water tanker no water in Ward 8",water,negative,high,Ward 8,ward,ward_8,0.91,cluster_water_ward8
+146,evt_146,"Roads in Ward 4 have no drainage system",en,"No drainage system on roads in Ward 4",roads,negative,low,Ward 4,ward,ward_4,0.77,cluster_roads_ward4
+147,evt_147,"Ward 5 me streetlight nahi, safe nahi",hinglish,"No streetlight in Ward 5, not safe",streetlight,negative,high,Ward 5,ward,ward_5,0.96,cluster_streetlight_ward5
+148,evt_148,"वार्ड 3 में कचरा डंपिंग यार्ड खराब",hi,"Garbage dumping yard bad in Ward 3",garbage,negative,medium,Ward 3,ward,ward_3,0.83,cluster_garbage_ward3
+149,evt_149,"Health centre in Ward 7 lacks diagnostic facilities",en,"Health centre in Ward 7 lacks diagnostic facilities",healthcare,negative,high,Ward 7,ward,ward_7,0.89,cluster_healthcare_ward7
+150,evt_150,"Ward 2 me drainage water logging se mosquito",hinglish,"Mosquitoes due to drainage water logging in Ward 2",drainage,negative,high,Ward 2,ward,ward_2,0.86,cluster_drainage_ward2
+151,evt_151,"Water supply irregular in Ward 1",en,"Irregular water supply in Ward 1",water,negative,medium,Ward 1,ward,ward_1,0.78,cluster_water_ward1
+152,evt_152,"Ward 6 me bijli ka bill jyada, supply kam",hinglish,"High electricity bill but low supply in Ward 6",electricity,negative,low,Ward 6,ward,ward_6,0.75,cluster_electricity_ward6
+153,evt_153,"வார்டு 4-ல் சாலை பழுது நீடிக்கிறது",ta,"Road repair prolonged in Ward 4",roads,negative,high,Ward 4,ward,ward_4,0.87,cluster_roads_ward4
+154,evt_154,"Sewage smell in Ward 5 entire area",en,"Sewage smell in entire Ward 5 area",sewage,negative,medium,Ward 5,ward,ward_5,0.82,cluster_sewage_ward5
+155,evt_155,"Ward 3 me streetlight ki maintenance nahi",hinglish,"No streetlight maintenance in Ward 3",streetlight,negative,high,Ward 3,ward,ward_3,0.84,cluster_streetlight_ward3
+156,evt_156,"No garbage bins in Ward 8 public places",en,"No garbage bins in public places in Ward 8",garbage,negative,low,Ward 8,ward,ward_8,0.79,cluster_garbage_ward8
+157,evt_157,"वार्ड 1 में नाली सफाई के बाद भी बदबू",hi,"Foul smell even after drain cleaning in Ward 1",drainage,negative,medium,Ward 1,ward,ward_1,0.80,cluster_drainage_ward1
+158,evt_158,"Health centre in Ward 2 lacks oxygen cylinders",en,"Health centre in Ward 2 lacks oxygen cylinders",healthcare,negative,high,Ward 2,ward,ward_2,0.92,cluster_healthcare_ward2
+159,evt_159,"Ward 7 me paani ki tanki saaf nahi",hinglish,"Water tank not clean in Ward 7",water,negative,high,Ward 7,ward,ward_7,0.86,cluster_water_ward7
+160,evt_160,"Roads in Ward 6 have no pedestrian path",en,"No pedestrian path on roads in Ward 6",roads,negative,medium,Ward 6,ward,ward_6,0.78,cluster_roads_ward6
+161,evt_161,"Ward 4 me electricity meter tamper",hinglish,"Electricity meter tampering in Ward 4",electricity,negative,low,Ward 4,ward,ward_4,0.73,cluster_electricity_ward4
+162,evt_162,"வார்டு 3-ல் கழிவு நீர் வெளியேறுகிறது",ta,"Sewage water leaking in Ward 3",sewage,negative,high,Ward 3,ward,ward_3,0.90,cluster_sewage_ward3
+163,evt_163,"Garbage burning causing respiratory issues in Ward 5",en,"Garbage burning causing respiratory issues in Ward 5",garbage,negative,high,Ward 5,ward,ward_5,0.94,cluster_garbage_ward5
+164,evt_164,"Ward 2 me streetlight fuse baar baar",hinglish,"Streetlight fuse repeatedly in Ward 2",streetlight,negative,medium,Ward 2,ward,ward_2,0.81,cluster_streetlight_ward2
+165,evt_165,"No water at all in Ward 8 for 2 days",en,"No water in Ward 8 for two days",water,negative,high,Ward 8,ward,ward_8,0.95,cluster_water_ward8
+166,evt_166,"Health centre in Ward 6 has no ambulance",en,"Health centre in Ward 6 has no ambulance",healthcare,negative,medium,Ward 6,ward,ward_6,0.83,cluster_healthcare_ward6
+167,evt_167,"वार्ड 7 में बिजली के तार जमीन पर",hi,"Electric wires on ground in Ward 7",electricity,negative,high,Ward 7,ward,ward_7,0.91,cluster_electricity_ward7
+168,evt_168,"Ward 1 me nali block, paani bhara",hinglish,"Drain blocked, water logged in Ward 1",drainage,negative,high,Ward 1,ward,ward_1,0.88,cluster_drainage_ward1
+169,evt_169,"Roads in Ward 3 have no markings or signs",en,"No markings or signs on roads in Ward 3",roads,negative,low,Ward 3,ward,ward_3,0.76,cluster_roads_ward3
+170,evt_170,"Ward 4 me garbage segregation not followed",hinglish,"Garbage segregation not followed in Ward 4",garbage,negative,medium,Ward 4,ward,ward_4,0.79,cluster_garbage_ward4
+171,evt_171,"வார்டு 5-ல் தெருவிளக்குகள் வேலை செய்யவில்லை",ta,"Streetlights not working in Ward 5",streetlight,negative,high,Ward 5,ward,ward_5,0.85,cluster_streetlight_ward5
+172,evt_172,"Sewage overflow near Ward 2 hospital",en,"Sewage overflow near Ward 2 hospital",sewage,negative,high,Ward 2,ward,ward_2,0.93,cluster_sewage_ward2
+173,evt_173,"Ward 6 me water pipeline leak",hinglish,"Water pipeline leak in Ward 6",water,negative,medium,Ward 6,ward,ward_6,0.82,cluster_water_ward6
+174,evt_174,"Health centre in Ward 8 lacks basic equipment",en,"Health centre in Ward 8 lacks basic equipment",healthcare,negative,high,Ward 8,ward,ward_8,0.87,cluster_healthcare_ward8
+175,evt_175,"वार्ड 2 में बिजली की समस्या पुरानी",hi,"Old electricity problem in Ward 2",electricity,negative,low,Ward 2,ward,ward_2,0.74,cluster_electricity_ward2
+176,evt_176,"Ward 3 me streetlight repair pending since months",hinglish,"Streetlight repair pending for months in Ward 3",streetlight,negative,high,Ward 3,ward,ward_3,0.89,cluster_streetlight_ward3
+177,evt_177,"Roads in Ward 7 full of potholes after rain",en,"Roads full of potholes after rain in Ward 7",roads,negative,high,Ward 7,ward,ward_7,0.86,cluster_roads_ward7
+178,evt_178,"Ward 4 me drainage water mixing with tap water",hinglish,"Drainage water mixing with tap water in Ward 4",drainage,negative,high,Ward 4,ward,ward_4,0.96,cluster_drainage_ward4
+179,evt_179,"வார்டு 6-ல் குப்பை தொட்டி இல்லை",ta,"No garbage bin in Ward 6",garbage,negative,medium,Ward 6,ward,ward_6,0.80,cluster_garbage_ward6
+180,evt_180,"No water pressure in Ward 1 for weeks",en,"No water pressure in Ward 1 for weeks",water,negative,high,Ward 1,ward,ward_1,0.90,cluster_water_ward1
+181,evt_181,"Ward 5 me streetlight nahi, crime badha",hinglish,"No streetlight in Ward 5, crime increased",streetlight,negative,high,Ward 5,ward,ward_5,0.92,cluster_streetlight_ward5
+182,evt_182,"Health centre in Ward 7 no specialist",en,"No specialist at health centre in Ward 7",healthcare,negative,medium,Ward 7,ward,ward_7,0.81,cluster_healthcare_ward7
+183,evt_183,"वार्ड 8 में सीवेज लाइन टूटी",hi,"Sewage line broken in Ward 8",sewage,negative,high,Ward 8,ward,ward_8,0.89,cluster_sewage_ward8
+184,evt_184,"Ward 2 me bijli ka wire sparking",hinglish,"Electric wire sparking in Ward 2",electricity,negative,high,Ward 2,ward,ward_2,0.94,cluster_electricity_ward2
+185,evt_185,"Roads in Ward 4 have no proper drainage",en,"No proper drainage on roads in Ward 4",roads,negative,low,Ward 4,ward,ward_4,0.75,cluster_roads_ward4
+186,evt_186,"Ward 3 me garbage truck arrives late",hinglish,"Garbage truck arrives late in Ward 3",garbage,negative,medium,Ward 3,ward,ward_3,0.78,cluster_garbage_ward3
+187,evt_187,"Water supply only during night in Ward 6",en,"Water supply only during night in Ward 6",water,negative,high,Ward 6,ward,ward_6,0.84,cluster_water_ward6
+188,evt_188,"வார்டு 1-ல் மின் உற்பத்தி நிலையம் பழுது",ta,"Power substation fault in Ward 1",electricity,negative,high,Ward 1,ward,ward_1,0.87,cluster_electricity_ward1
+189,evt_189,"No streetlights in Ward 2 park area",en,"No streetlights in Ward 2 park area",streetlight,negative,medium,Ward 2,ward,ward_2,0.79,cluster_streetlight_ward2
+190,evt_190,"Health centre in Ward 4 lacks nurses",en,"Health centre in Ward 4 lacks nurses",healthcare,negative,high,Ward 4,ward,ward_4,0.86,cluster_healthcare_ward4
+191,evt_191,"Ward 7 me nala khula, bacche khelte",hinglish,"Open drain in Ward 7, children playing",drainage,negative,high,Ward 7,ward,ward_7,0.91,cluster_drainage_ward7
+192,evt_192,"वार्ड 5 में सड़कों पर गड्ढे",hi,"Potholes on roads in Ward 5",roads,negative,high,Ward 5,ward,ward_5,0.88,cluster_roads_ward5
+193,evt_193,"Ward 8 me bijli ka meter slow",hinglish,"Electric meter slow in Ward 8",electricity,negative,low,Ward 8,ward,ward_8,0.72,cluster_electricity_ward8
+194,evt_194,"Sewage treatment plant overflow in Ward 3",en,"Sewage treatment plant overflow in Ward 3",sewage,negative,high,Ward 3,ward,ward_3,0.92,cluster_sewage_ward3
+195,evt_195,"Garbage littered on streets in Ward 1",en,"Garbage littered on streets in Ward 1",garbage,negative,medium,Ward 1,ward,ward_1,0.83,cluster_garbage_ward1
+196,evt_196,"Ward 4 me water tanker me paani nahi",hinglish,"No water in water tanker in Ward 4",water,negative,high,Ward 4,ward,ward_4,0.85,cluster_water_ward4
+197,evt_197,"வார்டு 7-ல் சாலை வேலை தரமற்றது",ta,"Poor quality road work in Ward 7",roads,negative,medium,Ward 7,ward,ward_7,0.80,cluster_roads_ward7
+198,evt_198,"Health centre in Ward 2 has no pharmacy",en,"Health centre in Ward 2 has no pharmacy",healthcare,negative,high,Ward 2,ward,ward_2,0.89,cluster_healthcare_ward2
+199,evt_199,"Ward 6 me streetlight nahi, robberies",hinglish,"No streetlight in Ward 6, robberies happening",streetlight,negative,high,Ward 6,ward,ward_6,0.93,cluster_streetlight_ward6
+200,evt_200,"Water supply dirty in Ward 8",en,"Dirty water supply in Ward 8",water,negative,high,Ward 8,ward,ward_8,0.86,cluster_water_ward8
+1,evt_001,"Ward 2 mein sanitation ki samasya resolved",hinglish,"Sanitation issue resolved in Ward 2",sanitation,positive,low,Ward 2,ward,ward_2,0.91,cluster_sanitation_ward2
+2,evt_002,"Sewage overflow on MG Road, Ward 4 fixed promptly",en,"Sewage overflow fixed promptly on MG Road, Ward 4",sewage,positive,medium,Ward 4,ward,ward_4,0.94,cluster_sewage_ward4
+3,evt_003,"வார்டு 6-ல் தண்ணீர் விநியோகம் சீராக உள்ளது",ta,"Water supply regular in Ward 6",water,positive,low,Ward 6,ward,ward_6,0.88,cluster_water_ward6
+4,evt_004,"Ward 3 me road repair work underway",hinglish,"Road repair work underway in Ward 3",roads,neutral,medium,Ward 3,ward,ward_3,0.85,cluster_roads_ward3
+5,evt_005,"Garbage collection improved in Ward 4",en,"Garbage collection improved in Ward 4",garbage,positive,low,Ward 4,ward,ward_4,0.89,cluster_garbage_ward4
+6,evt_006,"वार्ड 1 में बिजली की समस्या दूर",hi,"Electricity issue resolved in Ward 1",electricity,positive,low,Ward 1,ward,ward_1,0.92,cluster_electricity_ward1
+7,evt_007,"Ward 7 lo drainage clear chesaru",te,"Drainage cleared in Ward 7",drainage,positive,medium,Ward 7,ward,ward_7,0.93,cluster_drainage_ward7
+8,evt_008,"Streetlights in Ward 7 working now",en,"Streetlights now working in Ward 7",streetlight,positive,low,Ward 7,ward,ward_7,0.86,cluster_streetlight_ward7
+9,evt_009,"Ward 7 mein sadak repair ho gayi",hinglish,"Road repaired in Ward 7",roads,positive,low,Ward 7,ward,ward_7,0.90,cluster_roads_ward7
+10,evt_010,"Health centre in Ward 4 received new medicines",en,"Health centre in Ward 4 received new medicines",healthcare,positive,medium,Ward 4,ward,ward_4,0.88,cluster_healthcare_ward4
+11,evt_011,"Ward 5 me paani ki tanki bhar gayi",hinglish,"Water tank filled in Ward 5",water,positive,low,Ward 5,ward,ward_5,0.84,cluster_water_ward5
+12,evt_012,"Mosquito control measures taken in Ward 3",en,"Mosquito control measures taken in Ward 3",sanitation,positive,medium,Ward 3,ward,ward_3,0.90,cluster_sanitation_ward3
+13,evt_013,"वार्ड 8 में सड़कों की मरम्मत शुरू",hi,"Road repair started in Ward 8",roads,neutral,low,Ward 8,ward,ward_8,0.81,cluster_roads_ward8
+14,evt_014,"Ward 2 garbage cleared after complaint",en,"Garbage cleared after complaint in Ward 2",garbage,positive,high,Ward 2,ward,ward_2,0.95,cluster_garbage_ward2
+15,evt_015,"Power supply stable in Ward 6",en,"Power supply stable in Ward 6",electricity,positive,low,Ward 6,ward,ward_6,0.87,cluster_electricity_ward6
+16,evt_016,"Ward 1 drainage system cleaned",en,"Drainage system cleaned in Ward 1",drainage,positive,medium,Ward 1,ward,ward_1,0.92,cluster_drainage_ward1
+17,evt_017,"Ward 7 mein streetlights repaired",hinglish,"Streetlights repaired in Ward 7",streetlight,positive,low,Ward 7,ward,ward_7,0.83,cluster_streetlight_ward7
+18,evt_018,"Doctor available at Ward 5 health post now",en,"Doctor available at Ward 5 health post now",healthcare,positive,medium,Ward 5,ward,ward_5,0.86,cluster_healthcare_ward5
+19,evt_019,"వార్డు 4 లో మురికి తొలగించారు",te,"Garbage removed in Ward 4",garbage,positive,low,Ward 4,ward,ward_4,0.85,cluster_garbage_ward4
+20,evt_020,"Ward 2 me nali saaf kar di",hinglish,"Drain cleaned in Ward 2",drainage,positive,medium,Ward 2,ward,ward_2,0.88,cluster_drainage_ward2
+21,evt_021,"Water supply schedule announced in Ward 8",en,"Water supply schedule announced in Ward 8",water,neutral,low,Ward 8,ward,ward_8,0.79,cluster_water_ward8
+22,evt_022,"Ward 6 me bijli bill adjustment camp",hinglish,"Electricity bill adjustment camp in Ward 6",electricity,neutral,medium,Ward 6,ward,ward_6,0.74,cluster_electricity_ward6
+23,evt_023,"Roads in Ward 4 repaired with quality material",en,"Roads repaired with quality material in Ward 4",roads,positive,low,Ward 4,ward,ward_4,0.93,cluster_roads_ward4
+24,evt_024,"वार्ड 3 में सीवेज लाइन बदली",hi,"Sewage line replaced in Ward 3",sewage,positive,high,Ward 3,ward,ward_3,0.87,cluster_sewage_ward3
+25,evt_025,"Ward 5 healthcare facility upgraded",en,"Healthcare facility upgraded in Ward 5",healthcare,positive,low,Ward 5,ward,ward_5,0.82,cluster_healthcare_ward5
+26,evt_026,"Garbage truck now regular in Ward 7",en,"Garbage truck now regular in Ward 7",garbage,positive,medium,Ward 7,ward,ward_7,0.91,cluster_garbage_ward7
+27,evt_027,"Ward 2 me water pipeline repaired",hinglish,"Water pipeline repaired in Ward 2",water,positive,high,Ward 2,ward,ward_2,0.78,cluster_water_ward2
+28,evt_028,"Streetlights installed in Ward 1 lanes",en,"Streetlights installed in Ward 1 lanes",streetlight,positive,medium,Ward 1,ward,ward_1,0.84,cluster_streetlight_ward1
+29,evt_029,"Ward 3 me open drain covered",hinglish,"Open drain covered in Ward 3",drainage,positive,high,Ward 3,ward,ward_3,0.89,cluster_drainage_ward3
+30,evt_030,"வார்டு 5-ல் மின்சாரம் சீராக உள்ளது",ta,"Electricity stable in Ward 5",electricity,positive,low,Ward 5,ward,ward_5,0.80,cluster_electricity_ward5
+31,evt_031,"Ward 8 me kachra uthaya jaa raha hai",hinglish,"Garbage being collected in Ward 8",garbage,positive,low,Ward 8,ward,ward_8,0.95,cluster_garbage_ward8
+32,evt_032,"Road condition near Ward 4 market improved",en,"Road condition improved near Ward 4 market",roads,positive,medium,Ward 4,ward,ward_4,0.85,cluster_roads_ward4
+33,evt_033,"Ward 6 mein paani ki supply badhi",hinglish,"Water supply increased in Ward 6",water,positive,high,Ward 6,ward,ward_6,0.92,cluster_water_ward6
+34,evt_034,"Streetlights installed in Ward 2 lanes",en,"Streetlights installed in Ward 2 lanes",streetlight,positive,low,Ward 2,ward,ward_2,0.79,cluster_streetlight_ward2
+35,evt_035,"వార్డు 7 లో విద్యుత్ స్తంభం మరమ్మత్తు",te,"Electric pole repaired in Ward 7",electricity,positive,high,Ward 7,ward,ward_7,0.87,cluster_electricity_ward7
+36,evt_036,"Ward 1 me drainage system working fine",hinglish,"Drainage system working fine in Ward 1",drainage,positive,low,Ward 1,ward,ward_1,0.83,cluster_drainage_ward1
+37,evt_037,"Health centre now open on weekends in Ward 3",en,"Health centre now open on weekends in Ward 3",healthcare,positive,medium,Ward 3,ward,ward_3,0.77,cluster_healthcare_ward3
+38,evt_038,"Ward 5 mein roads pakke ho gaye",hinglish,"Roads paved in Ward 5",roads,positive,high,Ward 5,ward,ward_5,0.90,cluster_roads_ward5
+39,evt_039,"Sewage smell reduced in Ward 8 colony",en,"Sewage smell reduced in Ward 8 colony",sewage,positive,medium,Ward 8,ward,ward_8,0.81,cluster_sewage_ward8
+40,evt_040,"वार्ड 2 में पानी की टंकी ठीक",hi,"Water tank repaired in Ward 2",water,positive,high,Ward 2,ward,ward_2,0.86,cluster_water_ward2
+41,evt_041,"Ward 6 garbage dump removed near school",en,"Garbage dump removed near school in Ward 6",garbage,positive,high,Ward 6,ward,ward_6,0.94,cluster_garbage_ward6
+42,evt_042,"Ward 3 me streetlight installation completed",hinglish,"Streetlight installation completed in Ward 3",streetlight,positive,medium,Ward 3,ward,ward_3,0.75,cluster_streetlight_ward3
+43,evt_043,"வார்டு 4-ல் மருத்துவமனைக்கு புதிய மருத்துவர்கள்",ta,"New doctors appointed at Ward 4 hospital",healthcare,positive,low,Ward 4,ward,ward_4,0.78,cluster_healthcare_ward4
+44,evt_044,"Power fluctuations resolved in Ward 1",en,"Power fluctuations resolved in Ward 1",electricity,positive,high,Ward 1,ward,ward_1,0.92,cluster_electricity_ward1
+45,evt_045,"Ward 7 me nala saaf ho gaya",hinglish,"Drain cleaned in Ward 7",drainage,positive,medium,Ward 7,ward,ward_7,0.84,cluster_drainage_ward7
+46,evt_046,"Footpath constructed in Ward 4",en,"Footpath constructed in Ward 4",roads,positive,low,Ward 4,ward,ward_4,0.73,cluster_roads_ward4
+47,evt_047,"Ward 5 mein water logging kam hua",hinglish,"Water logging reduced in Ward 5",water,positive,high,Ward 5,ward,ward_5,0.89,cluster_water_ward5
+48,evt_048,"वार्ड 8 में सीवेज प्लांट चालू",hi,"Sewage plant operational in Ward 8",sewage,positive,medium,Ward 8,ward,ward_8,0.82,cluster_sewage_ward8
+49,evt_049,"Ward 2 me bijli ki samasya dur",hinglish,"Electricity problem resolved in Ward 2",electricity,positive,high,Ward 2,ward,ward_2,0.77,cluster_electricity_ward2
+50,evt_050,"Garbage burning stopped in Ward 6",en,"Garbage burning stopped in Ward 6",garbage,positive,high,Ward 6,ward,ward_6,0.91,cluster_garbage_ward6
+51,evt_051,"Ward 3 health centre gets ambulance",en,"Ward 3 health centre gets ambulance",healthcare,positive,medium,Ward 3,ward,ward_3,0.80,cluster_healthcare_ward3
+52,evt_052,"వార్డు 1 లో రోడ్లు మరమ్మత్తు చేశారు",te,"Roads repaired in Ward 1",roads,positive,low,Ward 1,ward,ward_1,0.86,cluster_roads_ward1
+53,evt_053,"Ward 7 me open manhole covered",hinglish,"Open manhole covered in Ward 7",drainage,positive,high,Ward 7,ward,ward_7,0.96,cluster_drainage_ward7
+54,evt_054,"Streetlights working on Ward 5 main road",en,"Streetlights working on Ward 5 main road",streetlight,positive,medium,Ward 5,ward,ward_5,0.79,cluster_streetlight_ward5
+55,evt_055,"Ward 4 me pani ki supply barabar",hinglish,"Water supply regular in Ward 4",water,positive,high,Ward 4,ward,ward_4,0.85,cluster_water_ward4
+56,evt_056,"வார்டு 8-ல் குப்பை சேகரிப்பு மேம்பாடு",ta,"Garbage collection improved in Ward 8",garbage,positive,medium,Ward 8,ward,ward_8,0.83,cluster_garbage_ward8
+57,evt_057,"Transformer upgraded in Ward 3",en,"Transformer upgraded in Ward 3",electricity,positive,high,Ward 3,ward,ward_3,0.94,cluster_electricity_ward3
+58,evt_058,"Ward 2 me sadak ki marammat ho gayi",hinglish,"Road repair done in Ward 2",roads,positive,high,Ward 2,ward,ward_2,0.90,cluster_roads_ward2
+59,evt_059,"Sanitation workers deployed in Ward 6 slum",en,"Sanitation workers deployed in Ward 6 slum",sanitation,positive,medium,Ward 6,ward,ward_6,0.81,cluster_sanitation_ward6
+60,evt_060,"वार्ड 7 में नाली की सफाई हुई",hi,"Drain cleaned in Ward 7",drainage,positive,high,Ward 7,ward,ward_7,0.93,cluster_drainage_ward7
+61,evt_061,"Streetlight repair completed in Ward 1",en,"Streetlight repair completed in Ward 1",streetlight,positive,low,Ward 1,ward,ward_1,0.76,cluster_streetlight_ward1
+62,evt_062,"Health workers back to work in Ward 5",en,"Health workers back to work in Ward 5",healthcare,positive,high,Ward 5,ward,ward_5,0.88,cluster_healthcare_ward5
+63,evt_063,"Ward 4 me kachra jalana band",hinglish,"Garbage burning stopped in Ward 4",garbage,positive,medium,Ward 4,ward,ward_4,0.77,cluster_garbage_ward4
+64,evt_064,"వార్డు 6 లో త్రాగునీరు శుద్ధి",te,"Drinking water purified in Ward 6",water,positive,high,Ward 6,ward,ward_6,0.95,cluster_water_ward6
+65,evt_065,"Drainage work started on Ward 8 roads",en,"Drainage work started on Ward 8 roads",roads,neutral,medium,Ward 8,ward,ward_8,0.82,cluster_roads_ward8
+66,evt_066,"Ward 3 me bijli ka pole straight kar diya",hinglish,"Electric pole straightened in Ward 3",electricity,positive,high,Ward 3,ward,ward_3,0.89,cluster_electricity_ward3
+67,evt_067,"Sewage leak repaired near Ward 2 temple",en,"Sewage leak repaired near Ward 2 temple",sewage,positive,medium,Ward 2,ward,ward_2,0.84,cluster_sewage_ward2
+68,evt_068,"Ward 7 me healthcare staff trained",hinglish,"Healthcare staff trained in Ward 7",healthcare,positive,low,Ward 7,ward,ward_7,0.73,cluster_healthcare_ward7
+69,evt_069,"வார்டு 1-ல் தெருவிளக்குகள் பொருத்தப்பட்டுள்ளன",ta,"Streetlights installed in Ward 1",streetlight,positive,high,Ward 1,ward,ward_1,0.86,cluster_streetlight_ward1
+70,evt_070,"Park in Ward 5 cleaned of garbage",en,"Park cleaned of garbage in Ward 5",garbage,positive,medium,Ward 5,ward,ward_5,0.79,cluster_garbage_ward5
+71,evt_071,"Ward 8 me water pressure restored",hinglish,"Water pressure restored in Ward 8",water,positive,high,Ward 8,ward,ward_8,0.92,cluster_water_ward8
+72,evt_072,"Roads in Ward 4 reopened after repair",en,"Roads reopened after repair in Ward 4",roads,positive,high,Ward 4,ward,ward_4,0.87,cluster_roads_ward4
+73,evt_073,"वार्ड 3 में बिजली के तार बदले",hi,"Electrical wires replaced in Ward 3",electricity,positive,high,Ward 3,ward,ward_3,0.94,cluster_electricity_ward3
+74,evt_074,"Ward 6 me nali saaf, mosquito control",hinglish,"Drain cleaned, mosquito control in Ward 6",drainage,positive,medium,Ward 6,ward,ward_6,0.80,cluster_drainage_ward6
+75,evt_075,"Emergency services available at Ward 2 health centre",en,"Emergency services available at Ward 2 health centre",healthcare,positive,low,Ward 2,ward,ward_2,0.75,cluster_healthcare_ward2
+76,evt_076,"Ward 7 mein garbage truck regular",hinglish,"Garbage truck regular in Ward 7",garbage,positive,high,Ward 7,ward,ward_7,0.91,cluster_garbage_ward7
+77,evt_077,"వార్డు 5 లో మురికి కాలువ మరమ్మత్తు",te,"Sewage drain repaired in Ward 5",sewage,positive,medium,Ward 5,ward,ward_5,0.83,cluster_sewage_ward5
+78,evt_078,"Streetlights installed near Ward 1 school",en,"Streetlights installed near Ward 1 school",streetlight,positive,high,Ward 1,ward,ward_1,0.88,cluster_streetlight_ward1
+79,evt_079,"Ward 4 me drainage system upgraded",hinglish,"Drainage system upgraded in Ward 4",water,positive,high,Ward 4,ward,ward_4,0.85,cluster_water_ward4
+80,evt_080,"Night doctor available at Ward 8 hospital",en,"Night doctor available at Ward 8 hospital",healthcare,positive,medium,Ward 8,ward,ward_8,0.79,cluster_healthcare_ward8
+81,evt_081,"Ward 3 me bijli stable",hinglish,"Electricity stable in Ward 3",electricity,positive,high,Ward 3,ward,ward_3,0.93,cluster_electricity_ward3
+82,evt_082,"வார்டு 6-ல் குப்பை மேலாண்மை தொடங்கியது",ta,"Garbage management started in Ward 6",garbage,positive,low,Ward 6,ward,ward_6,0.81,cluster_garbage_ward6
+83,evt_083,"Sewage overflow fixed in Ward 2",en,"Sewage overflow fixed in Ward 2",sewage,positive,high,Ward 2,ward,ward_2,0.90,cluster_sewage_ward2
+84,evt_084,"Ward 5 me roads pe gaddhe bhare",hinglish,"Potholes filled on roads in Ward 5",roads,positive,medium,Ward 5,ward,ward_5,0.86,cluster_roads_ward5
+85,evt_085,"Water supply extended to 2 hours in Ward 7",en,"Water supply extended to two hours in Ward 7",water,positive,high,Ward 7,ward,ward_7,0.94,cluster_water_ward7
+86,evt_086,"वार्ड 4 में नाली की सफाई हुई",hi,"Drain cleaned in Ward 4",drainage,positive,medium,Ward 4,ward,ward_4,0.77,cluster_drainage_ward4
+87,evt_087,"Streetlight repair work expedited in Ward 1",en,"Streetlight repair work expedited in Ward 1",streetlight,neutral,low,Ward 1,ward,ward_1,0.74,cluster_streetlight_ward1
+88,evt_088,"Basic medicines now available at Ward 3 health centre",en,"Basic medicines now available at Ward 3 health centre",healthcare,positive,high,Ward 3,ward,ward_3,0.89,cluster_healthcare_ward3
+89,evt_089,"వార్డు 8 లో విద్యుత్ సరఫరా పునరుద్ధరణ",te,"Electricity supply restored in Ward 8",electricity,positive,medium,Ward 8,ward,ward_8,0.78,cluster_electricity_ward8
+90,evt_090,"Ward 6 me garbage dump shifted",hinglish,"Garbage dump relocated in Ward 6",garbage,positive,high,Ward 6,ward,ward_6,0.92,cluster_garbage_ward6
+91,evt_091,"Roads in Ward 7 cleaned",en,"Roads cleaned in Ward 7",roads,positive,medium,Ward 7,ward,ward_7,0.80,cluster_roads_ward7
+92,evt_092,"Ward 2 me water tanker aane laga",hinglish,"Water tanker started coming in Ward 2",water,positive,high,Ward 2,ward,ward_2,0.87,cluster_water_ward2
+93,evt_093,"வார்டு 4-ல் சாக்கடை தடை நீங்கியது",ta,"Drainage blockage cleared in Ward 4",drainage,positive,medium,Ward 4,ward,ward_4,0.82,cluster_drainage_ward4
+94,evt_094,"Streetlights installed in Ward 5 colony for safety",en,"Streetlights installed in Ward 5 colony for safety",streetlight,positive,high,Ward 5,ward,ward_5,0.95,cluster_streetlight_ward5
+95,evt_095,"Ward 3 health centre fully staffed",en,"Ward 3 health centre fully staffed",healthcare,positive,low,Ward 3,ward,ward_3,0.76,cluster_healthcare_ward3
+96,evt_096,"Ward 8 me bijli ki line repair ho gayi",hinglish,"Electric line repaired in Ward 8",electricity,positive,high,Ward 8,ward,ward_8,0.84,cluster_electricity_ward8
+97,evt_097,"Sewage water mixing issue resolved in Ward 1",en,"Sewage water mixing issue resolved in Ward 1",sewage,positive,high,Ward 1,ward,ward_1,0.97,cluster_sewage_ward1
+98,evt_098,"वार्ड 5 में कचरा जलाना बंद",hi,"Garbage burning stopped in Ward 5",garbage,positive,medium,Ward 5,ward,ward_5,0.88,cluster_garbage_ward5
+99,evt_099,"Ward 6 me roads repaired",hinglish,"Roads repaired in Ward 6",roads,positive,high,Ward 6,ward,ward_6,0.81,cluster_roads_ward6
+100,evt_100,"Water pipeline leak fixed in Ward 4",en,"Water pipeline leak fixed in Ward 4",water,positive,medium,Ward 4,ward,ward_4,0.79,cluster_water_ward4
+101,evt_101,"Ward 7 me open drain covered, no smell",hinglish,"Open drain covered, no smell in Ward 7",drainage,positive,high,Ward 7,ward,ward_7,0.86,cluster_drainage_ward7
+102,evt_102,"வார்டு 2-ல் மின் தூண் சரி செய்யப்பட்டது",ta,"Electric pole repaired in Ward 2",electricity,positive,low,Ward 2,ward,ward_2,0.83,cluster_electricity_ward2
+103,evt_103,"Sanitation workers deployed in Ward 3",en,"Sanitation workers deployed in Ward 3",sanitation,positive,high,Ward 3,ward,ward_3,0.90,cluster_sanitation_ward3
+104,evt_104,"Ward 8 me streetlights installed, theft reduced",hinglish,"Streetlights installed in Ward 8, theft reduced",streetlight,positive,high,Ward 8,ward,ward_8,0.92,cluster_streetlight_ward8
+105,evt_105,"Maternity care now available at Ward 6 health centre",en,"Maternity care now available at Ward 6 health centre",healthcare,positive,medium,Ward 6,ward,ward_6,0.85,cluster_healthcare_ward6
+106,evt_106,"వార్డు 7 లో రోడ్లు మరమ్మత్తు చేశారు",te,"Roads repaired in Ward 7",roads,positive,high,Ward 7,ward,ward_7,0.88,cluster_roads_ward7
+107,evt_107,"Ward 1 me pani ki supply clean",hinglish,"Clean water supply in Ward 1",water,positive,high,Ward 1,ward,ward_1,0.94,cluster_water_ward1
+108,evt_108,"Sewage treatment plant functional in Ward 5",en,"Sewage treatment plant functional in Ward 5",sewage,positive,medium,Ward 5,ward,ward_5,0.80,cluster_sewage_ward5
+109,evt_109,"Ward 4 me bijli ka bill correction camp",hinglish,"Electricity bill correction camp in Ward 4",electricity,neutral,low,Ward 4,ward,ward_4,0.78,cluster_electricity_ward4
+110,evt_110,"Garbage dump cleared near Ward 2 school",en,"Garbage dump cleared near Ward 2 school",garbage,positive,high,Ward 2,ward,ward_2,0.91,cluster_garbage_ward2
+111,evt_111,"वार्ड 3 में स्ट्रीट लाइट लग गई",hi,"Streetlights installed in Ward 3",streetlight,positive,medium,Ward 3,ward,ward_3,0.82,cluster_streetlight_ward3
+112,evt_112,"Ward 8 me healthcare camp organized",hinglish,"Healthcare camp organized in Ward 8",healthcare,neutral,high,Ward 8,ward,ward_8,0.86,cluster_healthcare_ward8
+113,evt_113,"Water logging resolved in Ward 6",en,"Water logging resolved in Ward 6",water,positive,high,Ward 6,ward,ward_6,0.89,cluster_water_ward6
+114,evt_114,"வார்டு 1-ல் கழிவு நீர் அகற்றப்பட்டது",ta,"Sewage water cleared in Ward 1",sewage,positive,medium,Ward 1,ward,ward_1,0.84,cluster_sewage_ward1
+115,evt_115,"Road markings done in Ward 7",en,"Road markings done in Ward 7",roads,positive,low,Ward 7,ward,ward_7,0.75,cluster_roads_ward7
+116,evt_116,"Ward 4 me drainage system repaired",hinglish,"Drainage system repaired in Ward 4",drainage,positive,high,Ward 4,ward,ward_4,0.87,cluster_drainage_ward4
+117,evt_117,"Power backup installed at Ward 5 health centre",en,"Power backup installed at Ward 5 health centre",healthcare,positive,medium,Ward 5,ward,ward_5,0.79,cluster_healthcare_ward5
+118,evt_118,"Ward 2 me streetlight working now",hinglish,"Streetlight working now in Ward 2",streetlight,positive,high,Ward 2,ward,ward_2,0.82,cluster_streetlight_ward2
+119,evt_119,"వార్డు 3 లో విద్యుత్ స్తంభం మరమ్మత్తు",te,"Electric pole repaired in Ward 3",electricity,positive,high,Ward 3,ward,ward_3,0.96,cluster_electricity_ward3
+120,evt_120,"Garbage segregation introduced in Ward 6",en,"Garbage segregation introduced in Ward 6",garbage,neutral,low,Ward 6,ward,ward_6,0.77,cluster_garbage_ward6
+121,evt_121,"Ward 8 me nala saaf, beemari kam",hinglish,"Drain cleaned, disease reduced in Ward 8",drainage,positive,high,Ward 8,ward,ward_8,0.93,cluster_drainage_ward8
+122,evt_122,"वार्ड 4 में पानी की टंकी साफ",hi,"Water tank cleaned in Ward 4",water,positive,medium,Ward 4,ward,ward_4,0.80,cluster_water_ward4
+123,evt_123,"New road constructed in Ward 1 colony",en,"New road constructed in Ward 1 colony",roads,positive,high,Ward 1,ward,ward_1,0.91,cluster_roads_ward1
+124,evt_124,"Ward 7 me transformer replaced",hinglish,"Transformer replaced in Ward 7",electricity,positive,high,Ward 7,ward,ward_7,0.95,cluster_electricity_ward7
+125,evt_125,"வார்டு 5-ல் சுகாதார மையம் மீண்டும் திறப்பு",ta,"Health centre reopened in Ward 5",healthcare,positive,medium,Ward 5,ward,ward_5,0.83,cluster_healthcare_ward5
+126,evt_126,"Sewage leak fixed in Ward 2",en,"Sewage leak fixed in Ward 2",sewage,positive,high,Ward 2,ward,ward_2,0.89,cluster_sewage_ward2
+127,evt_127,"Ward 3 me garbage collection regular",hinglish,"Garbage collection regular in Ward 3",garbage,positive,low,Ward 3,ward,ward_3,0.76,cluster_garbage_ward3
+128,evt_128,"Streetlights working in Ward 8 main bazaar",en,"Streetlights working in Ward 8 main bazaar",streetlight,positive,high,Ward 8,ward,ward_8,0.88,cluster_streetlight_ward8
+129,evt_129,"Water quality improved in Ward 6",en,"Water quality improved in Ward 6",water,positive,medium,Ward 6,ward,ward_6,0.85,cluster_water_ward6
+130,evt_130,"वार्ड 7 में डॉक्टर की नियुक्ति",hi,"Doctor appointed in Ward 7",healthcare,positive,high,Ward 7,ward,ward_7,0.92,cluster_healthcare_ward7
+131,evt_131,"Ward 4 me drainage construction completed",hinglish,"Drainage construction completed in Ward 4",drainage,positive,medium,Ward 4,ward,ward_4,0.78,cluster_drainage_ward4
+132,evt_132,"Roads in Ward 5 now have proper lighting",en,"Roads in Ward 5 now have proper lighting",roads,positive,low,Ward 5,ward,ward_5,0.74,cluster_roads_ward5
+133,evt_133,"Ward 1 me bijli ki wire repair",hinglish,"Electric wire repaired in Ward 1",electricity,positive,high,Ward 1,ward,ward_1,0.86,cluster_electricity_ward1
+134,evt_134,"வார்டு 8-ல் குப்பை சேகரிப்பு முறையாக",ta,"Garbage collection regular in Ward 8",garbage,positive,high,Ward 8,ward,ward_8,0.90,cluster_garbage_ward8
+135,evt_135,"Sewage flowing openly stopped in Ward 3",en,"Sewage flowing openly stopped in Ward 3",sewage,positive,medium,Ward 3,ward,ward_3,0.84,cluster_sewage_ward3
+136,evt_136,"Ward 2 me streetlight repair completed",hinglish,"Streetlight repair completed in Ward 2",streetlight,positive,low,Ward 2,ward,ward_2,0.79,cluster_streetlight_ward2
+137,evt_137,"X-ray facility now at Ward 4 health centre",en,"X-ray facility now at Ward 4 health centre",healthcare,positive,high,Ward 4,ward,ward_4,0.87,cluster_healthcare_ward4
+138,evt_138,"Water supply contamination resolved in Ward 5",en,"Water supply contamination resolved in Ward 5",water,positive,high,Ward 5,ward,ward_5,0.93,cluster_water_ward5
+139,evt_139,"वार्ड 6 में नाली का पानी निकाला गया",hi,"Drainage water removed in Ward 6",drainage,positive,medium,Ward 6,ward,ward_6,0.81,cluster_drainage_ward6
+140,evt_140,"Ward 7 me roads pe kachra nahi",hinglish,"No garbage on roads in Ward 7",garbage,positive,high,Ward 7,ward,ward_7,0.88,cluster_garbage_ward7
+141,evt_141,"Streetlights installed in Ward 3, accidents down",en,"Streetlights installed in Ward 3, accidents down",streetlight,positive,high,Ward 3,ward,ward_3,0.94,cluster_streetlight_ward3
+142,evt_142,"Ward 1 me voltage stabilizer installed",hinglish,"Voltage stabilizer installed in Ward 1",electricity,positive,medium,Ward 1,ward,ward_1,0.82,cluster_electricity_ward1
+143,evt_143,"வார்டு 2-ல் சுகாதார பணியாளர்கள் திரும்பினர்",ta,"Health workers returned in Ward 2",healthcare,positive,high,Ward 2,ward,ward_2,0.85,cluster_healthcare_ward2
+144,evt_144,"Sewage pipeline replaced in Ward 6",en,"Sewage pipeline replaced in Ward 6",sewage,positive,medium,Ward 6,ward,ward_6,0.80,cluster_sewage_ward6
+145,evt_145,"Ward 8 me water tanker regular",hinglish,"Water tanker regular in Ward 8",water,positive,high,Ward 8,ward,ward_8,0.91,cluster_water_ward8
+146,evt_146,"Drainage system constructed on Ward 4 roads",en,"Drainage system constructed on Ward 4 roads",roads,positive,low,Ward 4,ward,ward_4,0.77,cluster_roads_ward4
+147,evt_147,"Ward 5 me streetlight installation done",hinglish,"Streetlight installation done in Ward 5",streetlight,positive,high,Ward 5,ward,ward_5,0.96,cluster_streetlight_ward5
+148,evt_148,"वार्ड 3 में कचरा डंपिंग यार्ड ठीक",hi,"Garbage dumping yard repaired in Ward 3",garbage,positive,medium,Ward 3,ward,ward_3,0.83,cluster_garbage_ward3
+149,evt_149,"Diagnostic facilities added at Ward 7 health centre",en,"Diagnostic facilities added at Ward 7 health centre",healthcare,positive,high,Ward 7,ward,ward_7,0.89,cluster_healthcare_ward7
+150,evt_150,"Ward 2 me drainage water logging resolved",hinglish,"Drainage water logging resolved in Ward 2",drainage,positive,high,Ward 2,ward,ward_2,0.86,cluster_drainage_ward2
+151,evt_151,"Water supply schedule regular in Ward 1",en,"Water supply schedule regular in Ward 1",water,positive,medium,Ward 1,ward,ward_1,0.78,cluster_water_ward1
+152,evt_152,"Ward 6 me bijli bill correction done",hinglish,"Electricity bill correction done in Ward 6",electricity,positive,low,Ward 6,ward,ward_6,0.75,cluster_electricity_ward6
+153,evt_153,"வார்டு 4-ல் சாலை பழுது முடிந்தது",ta,"Road repair completed in Ward 4",roads,positive,high,Ward 4,ward,ward_4,0.87,cluster_roads_ward4
+154,evt_154,"Sewage smell eliminated in Ward 5",en,"Sewage smell eliminated in Ward 5",sewage,positive,medium,Ward 5,ward,ward_5,0.82,cluster_sewage_ward5
+155,evt_155,"Ward 3 me streetlight maintenance regular",hinglish,"Streetlight maintenance regular in Ward 3",streetlight,positive,high,Ward 3,ward,ward_3,0.84,cluster_streetlight_ward3
+156,evt_156,"Garbage bins installed in Ward 8 public places",en,"Garbage bins installed in Ward 8 public places",garbage,positive,low,Ward 8,ward,ward_8,0.79,cluster_garbage_ward8
+157,evt_157,"वार्ड 1 में नाली सफाई के बाद बदबू गई",hi,"Foul smell gone after drain cleaning in Ward 1",drainage,positive,medium,Ward 1,ward,ward_1,0.80,cluster_drainage_ward1
+158,evt_158,"Oxygen cylinders supplied to Ward 2 health centre",en,"Oxygen cylinders supplied to Ward 2 health centre",healthcare,positive,high,Ward 2,ward,ward_2,0.92,cluster_healthcare_ward2
+159,evt_159,"Ward 7 me paani ki tanki saaf kar di",hinglish,"Water tank cleaned in Ward 7",water,positive,high,Ward 7,ward,ward_7,0.86,cluster_water_ward7
+160,evt_160,"Pedestrian path constructed in Ward 6",en,"Pedestrian path constructed in Ward 6",roads,positive,medium,Ward 6,ward,ward_6,0.78,cluster_roads_ward6
+161,evt_161,"Ward 4 me electricity meter replaced",hinglish,"Electricity meter replaced in Ward 4",electricity,positive,low,Ward 4,ward,ward_4,0.73,cluster_electricity_ward4
+162,evt_162,"வார்டு 3-ல் கழிவு நீர் கசிவு சரி",ta,"Sewage water leak fixed in Ward 3",sewage,positive,high,Ward 3,ward,ward_3,0.90,cluster_sewage_ward3
+163,evt_163,"Garbage burning stopped, air quality improved in Ward 5",en,"Garbage burning stopped, air quality improved in Ward 5",garbage,positive,high,Ward 5,ward,ward_5,0.94,cluster_garbage_ward5
+164,evt_164,"Ward 2 me streetlight fuse replaced",hinglish,"Streetlight fuse replaced in Ward 2",streetlight,positive,medium,Ward 2,ward,ward_2,0.81,cluster_streetlight_ward2
+165,evt_165,"Water supply restored in Ward 8",en,"Water supply restored in Ward 8",water,positive,high,Ward 8,ward,ward_8,0.95,cluster_water_ward8
+166,evt_166,"Ambulance available at Ward 6 health centre",en,"Ambulance available at Ward 6 health centre",healthcare,positive,medium,Ward 6,ward,ward_6,0.83,cluster_healthcare_ward6
+167,evt_167,"वार्ड 7 में बिजली के तार बदले",hi,"Electric wires replaced in Ward 7",electricity,positive,high,Ward 7,ward,ward_7,0.91,cluster_electricity_ward7
+168,evt_168,"Ward 1 me nali block cleared",hinglish,"Drain blockage cleared in Ward 1",drainage,positive,high,Ward 1,ward,ward_1,0.88,cluster_drainage_ward1
+169,evt_169,"Road markings and signs added in Ward 3",en,"Road markings and signs added in Ward 3",roads,positive,low,Ward 3,ward,ward_3,0.76,cluster_roads_ward3
+170,evt_170,"Ward 4 me garbage segregation implemented",hinglish,"Garbage segregation implemented in Ward 4",garbage,positive,medium,Ward 4,ward,ward_4,0.79,cluster_garbage_ward4
+171,evt_171,"வார்டு 5-ல் தெருவிளக்குகள் வேலை செய்கின்றன",ta,"Streetlights working in Ward 5",streetlight,positive,high,Ward 5,ward,ward_5,0.85,cluster_streetlight_ward5
+172,evt_172,"Sewage overflow fixed near Ward 2 hospital",en,"Sewage overflow fixed near Ward 2 hospital",sewage,positive,high,Ward 2,ward,ward_2,0.93,cluster_sewage_ward2
+173,evt_173,"Ward 6 me water pipeline leak repaired",hinglish,"Water pipeline leak repaired in Ward 6",water,positive,medium,Ward 6,ward,ward_6,0.82,cluster_water_ward6
+174,evt_174,"Basic equipment provided at Ward 8 health centre",en,"Basic equipment provided at Ward 8 health centre",healthcare,positive,high,Ward 8,ward,ward_8,0.87,cluster_healthcare_ward8
+175,evt_175,"वार्ड 2 में बिजली की समस्या हल",hi,"Electricity problem resolved in Ward 2",electricity,positive,low,Ward 2,ward,ward_2,0.74,cluster_electricity_ward2
+176,evt_176,"Ward 3 me streetlight repair completed",hinglish,"Streetlight repair completed in Ward 3",streetlight,positive,high,Ward 3,ward,ward_3,0.89,cluster_streetlight_ward3
+177,evt_177,"Roads in Ward 7 resurfaced after rain",en,"Roads resurfaced after rain in Ward 7",roads,positive,high,Ward 7,ward,ward_7,0.86,cluster_roads_ward7
+178,evt_178,"Ward 4 me drainage water mixing stopped",hinglish,"Drainage water mixing stopped in Ward 4",drainage,positive,high,Ward 4,ward,ward_4,0.96,cluster_drainage_ward4
+179,evt_179,"வார்டு 6-ல் குப்பை தொட்டி வைக்கப்பட்டது",ta,"Garbage bin placed in Ward 6",garbage,positive,medium,Ward 6,ward,ward_6,0.80,cluster_garbage_ward6
+180,evt_180,"Water pressure restored in Ward 1",en,"Water pressure restored in Ward 1",water,positive,high,Ward 1,ward,ward_1,0.90,cluster_water_ward1
+181,evt_181,"Ward 5 me streetlights working, crime down",hinglish,"Streetlights working, crime down in Ward 5",streetlight,positive,high,Ward 5,ward,ward_5,0.92,cluster_streetlight_ward5
+182,evt_182,"Specialist doctor now at Ward 7 health centre",en,"Specialist doctor now at Ward 7 health centre",healthcare,positive,medium,Ward 7,ward,ward_7,0.81,cluster_healthcare_ward7
+183,evt_183,"वार्ड 8 में सीवेज लाइन ठीक",hi,"Sewage line repaired in Ward 8",sewage,positive,high,Ward 8,ward,ward_8,0.89,cluster_sewage_ward8
+184,evt_184,"Ward 2 me bijli ka wire replaced",hinglish,"Electric wire replaced in Ward 2",electricity,positive,high,Ward 2,ward,ward_2,0.94,cluster_electricity_ward2
+185,evt_185,"Drainage system installed on Ward 4 roads",en,"Drainage system installed on Ward 4 roads",roads,positive,low,Ward 4,ward,ward_4,0.75,cluster_roads_ward4
+186,evt_186,"Ward 3 me garbage truck punctual",hinglish,"Garbage truck punctual in Ward 3",garbage,positive,medium,Ward 3,ward,ward_3,0.78,cluster_garbage_ward3
+187,evt_187,"24-hour water supply in Ward 6",en,"24-hour water supply in Ward 6",water,positive,high,Ward 6,ward,ward_6,0.84,cluster_water_ward6
+188,evt_188,"வார்டு 1-ல் மின் உற்பத்தி நிலையம் சரி",ta,"Power substation repaired in Ward 1",electricity,positive,high,Ward 1,ward,ward_1,0.87,cluster_electricity_ward1
+189,evt_189,"Streetlights installed in Ward 2 park area",en,"Streetlights installed in Ward 2 park area",streetlight,positive,medium,Ward 2,ward,ward_2,0.79,cluster_streetlight_ward2
+190,evt_190,"Nurses appointed at Ward 4 health centre",en,"Nurses appointed at Ward 4 health centre",healthcare,positive,high,Ward 4,ward,ward_4,0.86,cluster_healthcare_ward4
+191,evt_191,"Ward 7 me nala cover, safe for children",hinglish,"Drain covered, safe for children in Ward 7",drainage,positive,high,Ward 7,ward,ward_7,0.91,cluster_drainage_ward7
+192,evt_192,"वार्ड 5 में सड़कों पर गड्ढे भरे",hi,"Potholes filled on roads in Ward 5",roads,positive,high,Ward 5,ward,ward_5,0.88,cluster_roads_ward5
+193,evt_193,"Ward 8 me bijli ka meter replaced",hinglish,"Electric meter replaced in Ward 8",electricity,positive,low,Ward 8,ward,ward_8,0.72,cluster_electricity_ward8
+194,evt_194,"Sewage treatment plant operational in Ward 3",en,"Sewage treatment plant operational in Ward 3",sewage,positive,high,Ward 3,ward,ward_3,0.92,cluster_sewage_ward3
+195,evt_195,"Streets in Ward 1 clean now",en,"Streets in Ward 1 clean now",garbage,positive,medium,Ward 1,ward,ward_1,0.83,cluster_garbage_ward1
+196,evt_196,"Ward 4 me water tanker supply regular",hinglish,"Water tanker supply regular in Ward 4",water,positive,high,Ward 4,ward,ward_4,0.85,cluster_water_ward4
+197,evt_197,"வார்டு 7-ல் சாலை வேலை தரமாக",ta,"Quality road work in Ward 7",roads,positive,medium,Ward 7,ward,ward_7,0.80,cluster_roads_ward7
+198,evt_198,"Pharmacy opened at Ward 2 health centre",en,"Pharmacy opened at Ward 2 health centre",healthcare,positive,high,Ward 2,ward,ward_2,0.89,cluster_healthcare_ward2
+199,evt_199,"Ward 6 me streetlights installed, safety improved",hinglish,"Streetlights installed, safety improved in Ward 6",streetlight,positive,high,Ward 6,ward,ward_6,0.93,cluster_streetlight_ward6
+200,evt_200,"Water supply clean in Ward 8",en,"Clean water supply in Ward 8",water,positive,high,Ward 8,ward,ward_8,0.86,cluster_water_ward8

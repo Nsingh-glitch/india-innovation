@@ -1,0 +1,99 @@
+/* PAGE */
+.news-page {
+  padding: 40px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+/* TITLE */
+.news-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 28px;
+  margin-bottom: 25px;
+}
+
+/* LOGO */
+.news-img {
+  background: #e0f2fe;
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  border-radius: 12px;
+
+  /* soft glow */
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.25);
+}
+
+/* GRID */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARD - 3D STYLE */
+.news-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+
+  /* 🔥 layered 3D shadow */
+  box-shadow:
+    0 4px 10px rgba(0,0,0,0.05),
+    0 10px 25px rgba(0,0,0,0.08),
+    0 20px 40px rgba(0,0,0,0.06);
+
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+/* 🔥 HOVER EFFECT */
+.news-card:hover {
+  transform: translateY(-8px) scale(1.02);
+
+  box-shadow:
+    0 10px 20px rgba(0,0,0,0.08),
+    0 20px 40px rgba(0,0,0,0.12),
+    0 30px 60px rgba(0,0,0,0.10);
+}
+
+/* IMAGE */
+.news-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.news-content {
+  padding: 16px;
+}
+
+.news-content h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.news-content p {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* LINK */
+.news-content a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.news-content a:hover {
+  color: #1d4ed8;
+  transform: translateX(3px);
+}
