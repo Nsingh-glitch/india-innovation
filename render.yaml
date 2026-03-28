@@ -86,7 +86,8 @@ services:
   # =========================
   # FRONTEND SERVICE
   # =========================
-  - type: static
+- type: web
+    runtime: static
     name: sabhasaar-frontend
     rootDir: frontend
     buildCommand: npm install && npm run build
