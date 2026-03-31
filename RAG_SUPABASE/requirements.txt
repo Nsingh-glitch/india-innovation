@@ -1,8 +1,4 @@
 Flask
-Flask-Cors
-sentence-transformers
-pinecone-client
 openai
 supabase
 python-dotenv
-gunicorn

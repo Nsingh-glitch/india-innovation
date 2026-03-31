@@ -47,17 +47,9 @@ Write a public speech for a leader visiting {location}.
 
 LANGUAGE RULE (STRICT):
 - The speech MUST be written entirely in {language}
-- If language is "English": write fully in English
-- If language is "Hindi": write fully in Hindi (Devanagari script)
-- If language is "Hinglish": 
-    - Write in Roman script (English letters)
-    - Mix Hindi and English naturally (like spoken Indian Hinglish)
-    - Example style: "Yeh issue bahut serious hai aur hume turant action lena hoga"
-    - DO NOT use Hindi script (no Devanagari)
 - Do NOT use English unless the language is English
 - Use native script of {language}
 - If you use the wrong language, the answer is incorrect
-- Follow the language instruction strictly
 
 TONE:
 - Natural, emotional, human tone
