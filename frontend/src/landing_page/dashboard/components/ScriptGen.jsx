@@ -28,33 +28,31 @@ export default function ScriptGen() {
     }
   }
 
-  async function generateScript() {
-    setLoading(true);
+async function generateScript() {
+  setLoading(true);
 
-    try {
-      await fetch("http://127.0.0.1:5000/generate", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          type: "speech",
-          location,
-          language,
-        }),
-      });
+  try {
+    await fetch(`${API_URL}/generate`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        type: "speech",
+        location,
+        language,
+      }),
+    });
 
-      setTimeout(() => {
-        fetchScripts();
-        setLoading(false);
-      }, 1000);
-
-    } catch (err) {
-      console.error(err);
+    setTimeout(() => {
+      fetchScripts();
       setLoading(false);
-    }
+    }, 1000);
+  } catch (err) {
+    console.error(err);
+    setLoading(false);
   }
-
+}
   return (
     <div className="script-page">
 
