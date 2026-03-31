@@ -1,5 +1,8 @@
 from fastapi import FastAPI, HTTPException, Request
+<<<<<<< HEAD
 import httpx
+=======
+>>>>>>> ac232ef (fix scriptgen to use deployed backend url)
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from datetime import datetime
@@ -7,6 +10,7 @@ from supabase import create_client, Client
 import os
 from dotenv import load_dotenv
 import uuid
+import httpx
 
 load_dotenv()
 
