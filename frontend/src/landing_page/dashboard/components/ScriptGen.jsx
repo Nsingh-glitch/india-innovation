@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { supabase } from "../../lib/supabaseClient";
+import { API_URL } from "../../../config";
 import { MdCampaign } from "react-icons/md";
 import "./scriptgen.css";
 

@@ -380,6 +380,31 @@ def simulation_reset():
 def simulation_status():
     return get_simulation_status()
 
+
+# --- RAG Proxy Endpoint ---
+
+@app.post("/generate")
+async def proxy_generate(request: Request):
+    rag_api_url = os.environ.get("RAG_API_URL")
+    if not rag_api_url:
+        raise HTTPException(status_code=500, detail="RAG_API_URL is not configured on the backend server.")
+
+    data = await request.json()
+
+    try:
+        async with httpx.AsyncClient() as client:
+            # Forward the request to the RAG service
+            response = await client.post(f"{rag_api_url}/generate", json=data, timeout=60.0)
+            response.raise_for_status()  # Raise an exception for 4xx or 5xx status codes
+            return response.json()
+    except httpx.HTTPStatusError as e:
+        # Forward the exact error from the RAG service to the client
+        raise HTTPException(status_code=e.response.status_code, detail=e.response.text)
+    except httpx.RequestError as e:
+        # Handle network errors when trying to connect to the RAG service
+        raise HTTPException(status_code=502, detail=f"Could not connect to the RAG service: {e}")
+
+
 @app.post("/demo/reset-data")
 def demo_reset_data():
     try:
@@ -397,7 +422,3 @@ def demo_reset_data():
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-    
-
-
-

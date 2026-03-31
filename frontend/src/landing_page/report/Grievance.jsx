@@ -19,7 +19,7 @@ function Grievance() {
     setMessage("");
 
     try {
-      const res = await fetch("http://localhost:8000/submit-issue", {
+      const res = await fetch(`${API_URL}/submit-issue`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
