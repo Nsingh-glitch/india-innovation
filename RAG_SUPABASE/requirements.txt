@@ -5,3 +5,6 @@ supabase
 pinecone
 requests
 pydantic
+flask
+flask-cors
+gunicorn

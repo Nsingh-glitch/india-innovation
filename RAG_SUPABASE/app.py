@@ -7,6 +7,14 @@ from functions.speech import generate_speech
 from functions.utils import upsert_with_storage
 
 app = Flask(__name__)
+CORS(app, resources={
+    r"/*": {
+        "origins": [
+            "http://localhost:5173",
+            "https://india-innovation-tau.vercel.app"
+        ]
+    }
+})
 
 # ==============================
 # 🔥 ENABLE CORS (VERY IMPORTANT)
@@ -119,21 +127,9 @@ def ingest():
         }), 500
 
 
-from fastapi.middleware.cors import CORSMiddleware
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "https://india-innovation-tau.vercel.app/"
-    ],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
 # ==============================
 # RUN SERVER
 # ==============================
 if __name__ == "__main__":
-    app.run(host="127.0.0.1", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=True)
