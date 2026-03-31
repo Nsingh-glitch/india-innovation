@@ -250,7 +250,11 @@ processed_events_db = []
 # --- CORS Middleware ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:8000","https://india-innovation-tau.vercel.app/"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://india-innovation-tau.vercel.app",
+        "https://india-innovation-7g8n-1bqm0qgsb-nikhils-projects-fc9d4cc0.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
