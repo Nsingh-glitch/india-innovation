@@ -1,10 +1,8 @@
-fastapi
-uvicorn
-python-dotenv
+Flask
+Flask-Cors
+sentence-transformers
+pinecone-client
+openai
 supabase
-pinecone
-requests
-pydantic
-flask
-flask-cors
+python-dotenv
 gunicorn
