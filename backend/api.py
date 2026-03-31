@@ -1,8 +1,5 @@
 from fastapi import FastAPI, HTTPException, Request
-<<<<<<< HEAD
 import httpx
-=======
->>>>>>> ac232ef (fix scriptgen to use deployed backend url)
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from datetime import datetime
