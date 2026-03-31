@@ -35,9 +35,10 @@ def generate():
 
     try:
         if data["type"] == "qa":
-            return jsonify({
-                "result": rag_pipeline(data.get("query", ""))
-            })
+            pass
+            # return jsonify({
+            #     "result": rag_pipeline(data.get("query", ""))
+            # })
 
         elif data["type"] == "report":
             return jsonify({
