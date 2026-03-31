@@ -119,6 +119,19 @@ def ingest():
         }), 500
 
 
+from fastapi.middleware.cors import CORSMiddleware
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "http://localhost:5173",
+        "https://india-innovation-tau.vercel.app/"
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 # ==============================
 # RUN SERVER
 # ==============================
