@@ -21,7 +21,7 @@ IMPORTANT:
 
 
 HIGH URGENCY ISSUES:
-{high_urgency_context if high_urgency_context else "No high urgency issues reported"}
+{high_urgency_text}
 
 
 --------------------------------------

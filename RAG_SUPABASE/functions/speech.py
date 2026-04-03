@@ -47,11 +47,14 @@ def generate_speech(location, language="English"):
     with open(os.path.join(os.path.dirname(__file__), "prompt.txt"), "r") as f:
         prompt_template = f.read()
 
+    # Pre-compute the high urgency text to avoid complex logic in the prompt template
+    high_urgency_text = high_urgency_context if high_urgency_context else "No high urgency issues reported"
+
     # Format the prompt with the required variables
     prompt = prompt_template.format(
         location=location,
         language=language,
-        high_urgency_context=high_urgency_context if high_urgency_context else "No high urgency issues reported",
+        high_urgency_text=high_urgency_text,
         context=context,
         issue_counts=dict(issue_counts),
         urgency_counts=dict(urgency_counts),
