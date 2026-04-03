@@ -40,49 +40,25 @@ def generate_speech(location, language="English"):
     )
 
     # ==============================
-    # PROMPT (STRONG LANGUAGE CONTROL 🔥)
+    # PROMPT (FROM FILE)
     # ==============================
-    prompt = f"""
-Write a public speech for a leader visiting {location}.
+    # The user has not provided the import os statement, so I will add it here.
+    # In a real-world scenario, this should be at the top of the file.
+    import os
+    
+    # Load the prompt from the text file
+    with open(os.path.join(os.path.dirname(__file__), "prompt.txt"), "r") as f:
+        prompt_template = f.read()
 
-LANGUAGE RULE (STRICT):
-- The speech MUST be written entirely in {language}
-- Do NOT use English unless the language is English
-- Use native script of {language}
-- If you use the wrong language, the answer is incorrect
-
-TONE:
-- Natural, emotional, human tone
-
-IMPORTANT:
-- PRIORITIZE urgent issues first
-- Use ONLY given data
-
---------------------------------------
-
-HIGH URGENCY ISSUES:
-{high_urgency_context if high_urgency_context else "No high urgency issues reported"}
-
---------------------------------------
-
-OTHER ISSUES:
-{context}
-
---------------------------------------
-
-ISSUE DISTRIBUTION:
-{dict(issue_counts)}
-
-URGENCY DISTRIBUTION:
-{dict(urgency_counts)}
-
---------------------------------------
-
-Make it 1000-1200 words.
-No bullet points.
-
-Speech:
-"""
+    # Format the prompt with the required variables
+    prompt = prompt_template.format(
+        location=location,
+        language=language,
+        high_urgency_context=high_urgency_context if high_urgency_context else "No high urgency issues reported",
+        context=context,
+        issue_counts=dict(issue_counts),
+        urgency_counts=dict(urgency_counts),
+    )
 
     # ==============================
     # LLM CALL

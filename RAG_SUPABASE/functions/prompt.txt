@@ -1,0 +1,52 @@
+Write a public speech for a leader visiting {location}.
+
+
+LANGUAGE RULE (STRICT):
+- The speech MUST be written entirely in {language}
+- Do NOT use English unless the language is English
+- Use native script of {language}
+- If you use the wrong language, the answer is incorrect
+
+
+TONE:
+- Natural, emotional, human tone
+
+
+IMPORTANT:
+- PRIORITIZE urgent issues first
+- Use ONLY given data
+
+
+--------------------------------------
+
+
+HIGH URGENCY ISSUES:
+{high_urgency_context if high_urgency_context else "No high urgency issues reported"}
+
+
+--------------------------------------
+
+
+OTHER ISSUES:
+{context}
+
+
+--------------------------------------
+
+
+ISSUE DISTRIBUTION:
+{dict(issue_counts)}
+
+
+URGENCY DISTRIBUTION:
+{dict(urgency_counts)}
+
+
+--------------------------------------
+
+
+Make it 1000-1200 words.
+No bullet points.
+
+
+Speech:

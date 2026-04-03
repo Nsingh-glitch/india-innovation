@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { supabase } from "../../lib/supabaseClient";
 import { API_URL } from "../../../config";
 import { MdCampaign } from "react-icons/md";
@@ -15,9 +15,31 @@ export default function ScriptGen() {
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
+  const [displayedLatestText, setDisplayedLatestText] = useState("");
+  const skeletonLines = useMemo(() => Array.from({ length: 12 }), []);
+
   useEffect(() => {
     fetchScripts();
   }, []);
+
+  useEffect(() => {
+    if (!latest?.output || loading) return;
+
+    const fullText = latest.output;
+    let index = 0;
+    setDisplayedLatestText("");
+
+    const timer = setInterval(() => {
+      index += 4;
+      setDisplayedLatestText(fullText.slice(0, index));
+
+      if (index >= fullText.length) {
+        clearInterval(timer);
+      }
+    }, 12);
+
+    return () => clearInterval(timer);
+  }, [latest, loading]);
 
   async function fetchScripts() {
     try {
@@ -95,6 +117,7 @@ export default function ScriptGen() {
     setLoading(true);
     setSuccessMessage("");
     setErrorMessage("");
+    setDisplayedLatestText("");
 
     const requestedLocation = location;
     const requestedLanguage = language;
@@ -204,25 +227,59 @@ export default function ScriptGen() {
         <div className="status-message error">{errorMessage}</div>
       )}
 
-      {latest && (
-        <div className="latest-card">
-          <h2>✨ Latest Generated Speech</h2>
+      <div className="latest-card">
+        <h2>✨ Latest Generated Speech</h2>
 
-          <div className="script-card highlight">
-            <div className="script-top">
-              <h3>📍 {latest.input}</h3>
-              <span>{new Date(latest.created_at).toLocaleString()}</span>
+        <div className="script-card highlight">
+          {loading ? (
+            <div className="fake-speech-loader">
+              <div className="script-top">
+                <h3>📍 Generating speech...</h3>
+                <span className="ai-thinking-text">Analyzing issues...</span>
+              </div>
+
+              <div className="fake-title-block"></div>
+
+              <div className="fake-lines">
+                {skeletonLines.map((_, index) => (
+                  <div
+                    key={index}
+                    className={`fake-line ${
+                      index % 4 === 3 ? "short" : ""
+                    } ${index === 10 ? "medium" : ""}`}
+                  ></div>
+                ))}
+              </div>
+
+              <div className="typing-status-wrap">
+                <span className="typing-status">Drafting a public speech</span>
+                <span className="typing-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
             </div>
+          ) : latest ? (
+            <>
+              <div className="script-top">
+                <h3>📍 {latest.input}</h3>
+                <span>{new Date(latest.created_at).toLocaleString()}</span>
+              </div>
 
-            <p
-              className="speech-text expanded"
-              style={{ fontFamily: '"Noto Sans Tamil", system-ui, sans-serif' }}
-            >
-              {latest.output}
-            </p>
-          </div>
+              <p
+                className="speech-text expanded typing-text"
+                style={{ fontFamily: '"Noto Sans Tamil", system-ui, sans-serif' }}
+              >
+                {displayedLatestText || latest.output}
+                <span className="typing-cursor">|</span>
+              </p>
+            </>
+          ) : (
+            <p className="speech-text">No speech generated yet.</p>
+          )}
         </div>
-      )}
+      </div>
 
       <h2 className="section-title">Recent Speeches</h2>
 
