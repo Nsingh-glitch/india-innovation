@@ -1,20 +1,24 @@
 import os
-from functions.utils import supabase, call_llm
 from collections import Counter
+
+from functions.utils import supabase, call_llm
+
 
 def generate_speech(location, language="English"):
     location_input = location.lower().replace("_", " ")
 
     # ==============================
-    # FETCH FROM SUPABASE (UPDATED ✅)
+    # FETCH FROM SUPABASE
     # ==============================
-    response = supabase.table("processed_events") \
-        .select("*") \
-        .ilike("location_text", f"%{location_input}%") \
-        .limit(50) \
+    response = (
+        supabase.table("processed_events")
+        .select("*")
+        .ilike("location_text", f"%{location_input}%")
+        .limit(50)
         .execute()
+    )
 
-    rows = response.data
+    rows = response.data or []
 
     if not rows:
         return f"No data for {location}"
@@ -22,7 +26,7 @@ def generate_speech(location, language="English"):
     rows = rows[:20]
 
     # ==============================
-    # ANALYSIS (UPDATED FIELDS ✅)
+    # ANALYSIS
     # ==============================
     issue_counts = Counter([r.get("issue_category", "unknown") for r in rows])
     urgency_counts = Counter([r.get("urgency", "unknown") for r in rows])
@@ -32,7 +36,7 @@ def generate_speech(location, language="English"):
     ]
 
     # ==============================
-    # CONTEXT
+    # CONTEXT BUILDING
     # ==============================
     context = "\n".join([f"- {r.get('text', '')}" for r in rows[:10]])
 
@@ -40,17 +44,22 @@ def generate_speech(location, language="English"):
         [f"- {r.get('text', '')}" for r in high_urgency_rows[:8]]
     )
 
+    high_urgency_text = (
+        high_urgency_context
+        if high_urgency_context
+        else "No high urgency issues reported"
+    )
+
     # ==============================
-    # PROMPT (FROM FILE)
+    # LOAD PROMPT TEMPLATE
     # ==============================
-    # Load the prompt from the text file
-    with open(os.path.join(os.path.dirname(__file__), "prompt.txt"), "r") as f:
+    prompt_path = os.path.join(os.path.dirname(__file__), "prompt.txt")
+    with open(prompt_path, "r", encoding="utf-8") as f:
         prompt_template = f.read()
 
-    # Pre-compute the high urgency text to avoid complex logic in the prompt template
-    high_urgency_text = high_urgency_context if high_urgency_context else "No high urgency issues reported"
-
-    # Format the prompt with the required variables
+    # ==============================
+    # FORMAT PROMPT
+    # ==============================
     prompt = prompt_template.format(
         location=location,
         language=language,
@@ -69,19 +78,20 @@ def generate_speech(location, language="English"):
     # STORE IN "Speech" TABLE
     # ==============================
     try:
-        supabase.table("Speech").insert({
-            "input": f"{location} | {language}",
-            "output": result,
-            "metadata": {
-                "language": language,
-                "issue_counts": dict(issue_counts),
-                "urgency_counts": dict(urgency_counts),
-                "total_records": len(rows)
+        supabase.table("Speech").insert(
+            {
+                "input": f"{location} | {language}",
+                "output": result,
+                "metadata": {
+                    "language": language,
+                    "issue_counts": dict(issue_counts),
+                    "urgency_counts": dict(urgency_counts),
+                    "total_records": len(rows),
+                },
             }
-        }).execute()
+        ).execute()
 
     except Exception as e:
-        # Log the error for debugging purposes
-        print(f"❌ Speech log error: {e}")
+        print(f"Speech log error: {e}")
 
     return result
