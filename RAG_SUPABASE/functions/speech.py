@@ -104,9 +104,8 @@ Speech:
             }
         }).execute()
 
-        print("✅ Speech stored in Speech table")
-
     except Exception as e:
-        print("❌ Speech log error:", e)
+        # Log the error for debugging purposes
+        print(f"❌ Speech log error: {e}")
 
     return result

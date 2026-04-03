@@ -5,6 +5,7 @@ from functions.speech import generate_speech
 
 
 app = Flask(__name__)
+app.config['JSON_AS_ASCII'] = False
 
 # ==============================
 # HEALTH CHECK

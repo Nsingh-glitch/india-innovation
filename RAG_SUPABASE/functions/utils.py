@@ -34,13 +34,15 @@ supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=OPENROUTER_API_KEY,
-    default_headers={"HTTP-Referer": "http://localhost"}
+    default_headers={"HTTP-Referer": os.getenv("HTTP_REFERER", "http://localhost")}
 )
 
 # ==============================
 # LLM CALL
 # ==============================
 def call_llm(prompt, temp=0.3):
+    print("DEBUG OPENROUTER_API_KEY exists:", bool(os.getenv("OPENROUTER_API_KEY")))
+    print("DEBUG OPENROUTER_API_KEY prefix:", os.getenv("OPENROUTER_API_KEY", "")[:12])
     response = client.chat.completions.create(
         model=LLM_MODEL,
         messages=[

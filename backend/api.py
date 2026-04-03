@@ -387,24 +387,39 @@ def simulation_status():
 
 @app.post("/generate")
 async def proxy_generate(request: Request):
-    rag_api_url = os.environ.get("RAG_API_URL")
-    if not rag_api_url:
-        raise HTTPException(status_code=500, detail="RAG_API_URL is not configured on the backend server.")
-
+    rag_api_url = os.getenv("RAG_API_URL", "http://127.0.0.1:5000")
     data = await request.json()
-
     try:
-        async with httpx.AsyncClient() as client:
-            # Forward the request to the RAG service
-            response = await client.post(f"{rag_api_url}/generate", json=data, timeout=60.0)
-            response.raise_for_status()  # Raise an exception for 4xx or 5xx status codes
-            return response.json()
-    except httpx.HTTPStatusError as e:
-        # Forward the exact error from the RAG service to the client
-        raise HTTPException(status_code=e.response.status_code, detail=e.response.text)
+        async with httpx.AsyncClient(timeout=60.0) as client:
+            response = await client.post(f"{rag_api_url}/generate", json=data)
+
+            # Check for HTTP errors from the RAG service first
+            response.raise_for_status()
+
+            rag_data = response.json()
+
+            # Handle cases where RAG returns a 200 OK but reports a business logic error
+            if rag_data.get("status") == "error":
+                raise HTTPException(status_code=400, detail=rag_data)
+
+            return rag_data
+
     except httpx.RequestError as e:
-        # Handle network errors when trying to connect to the RAG service
-        raise HTTPException(status_code=502, detail=f"Could not connect to the RAG service: {e}")
+        # Log network errors for debugging
+        print(f"❌ RequestError connecting to RAG service: {e}")
+        raise HTTPException(status_code=502, detail={"message": f"The speech generation service is currently unavailable."})
+    except httpx.HTTPStatusError as e:
+        # Log non-2xx responses from the RAG service
+        print(f"❌ HTTPStatusError from RAG: {e.response.status_code} - {e.response.text}")
+        try:
+            detail = e.response.json()
+        except Exception:
+            detail = {"message": e.response.text}
+        raise HTTPException(status_code=e.response.status_code, detail=detail)
+    except Exception as e:
+        # Log other unexpected errors
+        print(f"❌ Unhandled /generate proxy error: {repr(e)}")
+        raise HTTPException(status_code=500, detail={"message": "An unexpected error occurred."})
 
 
 @app.post("/demo/reset-data")
