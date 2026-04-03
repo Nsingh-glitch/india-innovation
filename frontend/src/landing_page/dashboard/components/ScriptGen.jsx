@@ -146,12 +146,22 @@ export default function ScriptGen() {
       }
 
       if (!response.ok) {
-        const message =
-          responseData?.detail?.message ||
-          responseData?.detail ||
-          responseData?.message ||
-          responseData?.error ||
-          "Speech generation failed.";
+        let message = "Speech generation failed.";
+
+        if (typeof responseData?.detail === "string") {
+          message = responseData.detail;
+        } else if (typeof responseData?.detail?.message === "string") {
+          message = responseData.detail.message;
+        } else if (typeof responseData?.message === "string") {
+          message = responseData.message;
+        } else if (typeof responseData?.error === "string") {
+          message = responseData.error;
+        } else if (responseData?.detail) {
+          message = JSON.stringify(responseData.detail);
+        } else if (responseData) {
+          message = JSON.stringify(responseData);
+        }
+
         throw new Error(message);
       }
 
@@ -180,13 +190,18 @@ export default function ScriptGen() {
       toast.dismiss(loadingToast);
       toast.success(msg);
     } catch (err) {
-      console.error("generateScript error:", err);
-      const msg = err.message || "Speech could not be generated.";
-      setSuccessMessage("");
-      setErrorMessage(msg);
-      toast.dismiss(loadingToast);
-      toast.error(msg);
-    } finally {
+        console.error("generateScript error:", err);
+
+        const msg =
+          typeof err?.message === "string"
+            ? err.message
+            : "Speech could not be generated.";
+
+        setSuccessMessage("");
+        setErrorMessage(msg);
+        toast.dismiss(loadingToast);
+        toast.error(msg);
+      } finally {
       setLoading(false);
     }
   }

@@ -1,3 +1,4 @@
+import os
 from functions.utils import supabase, call_llm
 from collections import Counter
 
@@ -42,10 +43,6 @@ def generate_speech(location, language="English"):
     # ==============================
     # PROMPT (FROM FILE)
     # ==============================
-    # The user has not provided the import os statement, so I will add it here.
-    # In a real-world scenario, this should be at the top of the file.
-    import os
-    
     # Load the prompt from the text file
     with open(os.path.join(os.path.dirname(__file__), "prompt.txt"), "r") as f:
         prompt_template = f.read()
